@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url("/fonts/Geometria Bold/Geometria-Bold.eot");
+  src: url("/fonts/Geometria Bold/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Geometria Bold/Geometria-Bold.woff") format("woff"), url("/fonts/Geometria Bold/Geometria-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Regular';
+  src: url("/fonts/Segoe UI Regular/SegoeUI.eot");
+  src: url("/fonts/Segoe UI Regular/SegoeUI.eot?#iefix") format("embedded-opentype"), url("/fonts/Segoe UI Regular/SegoeUI.woff") format("woff"), url("/fonts/Segoe UI Regular/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Semibold';
+  src: url("/fonts/Segoe UI SemiBold/SegoeUI-SemiBold.eot");
+  src: url("/fonts/Segoe UI SemiBold/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Segoe UI SemiBold/SegoeUI-SemiBold.woff") format("woff"), url("/fonts/Segoe UI SemiBold/SegoeUI-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  background-image: url("/img/bg4.png");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 748px;
+  height: 880px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #000000;
+  border: 3px solid #8FF0FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+          box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+}
+
+#question {
+  width: 730px;
+  height: 94px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Geometria Bold;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #E9FCFF;
+}
+
+#image img {
+  width: 550px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  width: 600px;
+  cursor: pointer;
+  height: 70px;
+  background: #000000;
+  border: 3px solid #8FF0FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+          box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+}
+
+.btn_text {
+  margin: auto;
+  font-family: Segoe UI Regular;
+  font-size: 20px;
+}
+
+.btn:hover {
+  border: 3px solid #FFDD9B;
+  -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+          box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+}
+/*# sourceMappingURL=style.css.map */
