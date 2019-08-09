@@ -94,14 +94,17 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    cursor: pointer;
   }
   #start-btn::after {
-    background-color: red;
-    width: 50px;
-    height: 50px;
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 65px;
     content: "";
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: -30px;
   }
   .start-btn_text {
@@ -180,6 +183,57 @@ body {
     -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
             box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
   }
+  #start-label {
+    width: 550px;
+    height: 50px;
+    font-family: Geometria;
+    font-size: 35px;
+    line-height: 50px;
+    color: #E9FCFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 10px auto;
+  }
+  #start-text {
+    width: 580px;
+    height: 130px;
+    font-family: Geometria Regular;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+  }
+  #start-btn {
+    color: white;
+    background-color: white;
+    width: 330px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  #start-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 65px;
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -30px;
+  }
+  .start-btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 20px;
+    line-height: 29px;
+    color: #06001F;
+    text-align: center;
+  }
   #question {
     width: 560px;
     height: 94px;
@@ -249,6 +303,58 @@ body {
     -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
             box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
   }
+  #start-label {
+    width: 300px;
+    height: 35px;
+    font-family: Geometria;
+    font-size: 23px;
+    line-height: 35px;
+    color: #E9FCFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 10px auto;
+  }
+  #start-text {
+    width: 280px;
+    height: 130px;
+    font-family: Geometria Regular;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+  }
+  #start-btn {
+    color: white;
+    background-color: white;
+    width: 250px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  #start-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 65px;
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -25px;
+  }
+  .start-btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 20px;
+    line-height: 29px;
+    color: #06001F;
+    text-align: center;
+  }
   #question {
     width: 280px;
     height: 50px;
@@ -295,7 +401,7 @@ body {
   }
 }
 
-#start-label, #start-text, #start-btn {
+#question, .btn {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
