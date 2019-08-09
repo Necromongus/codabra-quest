@@ -3,8 +3,8 @@
         display: flex
         flex-direction: column
         align-items: center
-        width: 748px
-        height: 840px //изменил высоту!
+        width: 850px
+        height: 880px //изменил высоту!
         margin: auto auto
         
         background: #000000
@@ -14,15 +14,17 @@
         box-shadow: 0 0 20px rgba(#0042ED,0.86) /* Параметры тени */
         
     #start-label
-        width: 603px
-        height: 50px
-        font-family: Geometria
+        width: 800px
+        font-family: Geometria Bold
         font-size: 40px
         line-height: 50px
+        letter-spacing: 0.12em
         color: #E9FCFF
         text-align: center
         text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED /* Параметры тени */
-        margin: 50px auto
+        margin: 0 auto
+        margin-top: 45px
+        margin-bottom: 47px
 
     #start-text
         width: 697px
@@ -32,7 +34,10 @@
         line-height: 35px
         text-align: center
         color: white
-        margin: 30px auto
+        margin: 0 auto
+        margin-top: 34px
+        margin-bottom: 55px
+        
 
     #start-btn
         color: white
@@ -76,7 +81,7 @@
 
     #image img
         width: 550px
-        margin-bottom: 25px
+        
 
     .btn 
         display: flex
@@ -98,3 +103,88 @@
         &:hover
             border: 3px solid #FFDD9B
             box-shadow: 0 0 15px rgba(#C18000,0.86)
+
+    #ending-form
+        display: flex 
+        flex-direction: column 
+        align-items: center
+        align-content: center
+        justify-content: center      
+
+    .ending-form
+        &-top
+            display: flex
+            height: 82px
+            width: 849px
+            background-color: #000
+            border: 3px solid #8FF0FF
+            box-sizing: border-box
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
+            box-shadow: 0 0 20px rgba(#0042ED,0.86) /* Параметры тени */
+            &_text
+                color: #ffffff
+                margin: auto
+                font-family: Geometria Regular
+                font-size: 26px
+                line-height: 33px
+        
+        &-wrapper
+            position: relative
+
+        &-result-wrapper
+            padding-top: 56px
+            padding-left: 78px
+
+        &-bottom
+            display: flex
+            flex-direction: column
+            align-items: center
+            align-content: center
+            height: 408px
+            width: 849px
+            background-color: #000
+            border: 3px solid #8FF0FF
+            box-sizing: border-box
+            border-bottom-left-radius: 20px
+            border-bottom-right-radius: 20px
+            box-shadow: 0 15px 20px rgba(#0042ED,0.86) /* Параметры тени */
+            margin: 0 auto
+            margin-top: 390px
+        
+
+    #ending-form-result
+        width: 920px
+        height: 390px
+        background-image: url("/img/1e.png")
+        background-size: cover
+        position: absolute
+        top: 0px
+        left: -34px
+        z-index: -1
+
+        &_role
+            font-family: Geometria Bold
+            font-size: 38px
+            line-height: 38px
+            color: #E9FCFF
+            width: 328px
+            
+        &_description
+            width: 391px
+            height: 133px
+            font-family: Geometria Regular
+            font-size: 22px
+            line-height: 120%
+            color: #FFFFFF
+            margin-top: 84px
+    
+    .share-text
+        width: 408px
+        height: 21px
+        margin-top: 21px
+        text-align: center
+        font-family: Geometria Regular
+        font-size: 19px
+        line-height: 21px
+        color: #5D5D5D
