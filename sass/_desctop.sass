@@ -15,6 +15,7 @@
         
     #start-label
         width: 800px
+        height: 50px
         font-family: Geometria Bold
         font-size: 40px
         line-height: 50px
@@ -23,8 +24,12 @@
         text-align: center
         text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED /* Параметры тени */
         margin: 0 auto
-        margin-top: 45px
-        margin-bottom: 47px
+        margin-top: 44px
+        margin-bottom: 39px
+
+    #start-image
+        height: 330px
+
 
     #start-text
         width: 697px
@@ -35,15 +40,17 @@
         text-align: center
         color: white
         margin: 0 auto
-        margin-top: 34px
-        margin-bottom: 55px
+        margin-top: 57px
+        margin-bottom: 33px
         
 
     #start-btn
         color: white
-        background-color: white
-        width: 370px
-        height: 85px
+
+        background-image: url("/img/s-btn.png")
+        background-position: center center
+        width: 380px
+        height: 95px
         display: flex
         position: relative
         cursor: pointer
@@ -56,11 +63,11 @@
             content: ""
             position: absolute
             top: -50px
-            right: -30px
+            right: -24px
 
     .start-btn_text
         margin: auto
-        font-family: Geometria Regular
+        font-family: Geometria Bold
         font-size: 23px
         line-height: 29px
         color: #06001F
@@ -121,7 +128,7 @@
             box-sizing: border-box
             border-top-left-radius: 20px
             border-top-right-radius: 20px
-            box-shadow: 0 0 20px rgba(#0042ED,0.86) /* Параметры тени */
+            box-shadow: 0 -5px 20px rgba(#0042ED,0.86) /* Параметры тени */
             &_text
                 color: #ffffff
                 margin: auto
@@ -133,7 +140,7 @@
             position: relative
 
         &-result-wrapper
-            padding-top: 56px
+            padding-top: 80px
             padding-left: 78px
 
         &-bottom
@@ -154,13 +161,13 @@
         
 
     #ending-form-result
-        width: 920px
-        height: 390px
-        background-image: url("/img/1e.png")
+        width: 888px
+        height: 540px
+        background-image: url("/img/e1bg.png")
         background-size: cover
         position: absolute
-        top: 0px
-        left: -34px
+        top: -44px
+        left: -20px
         z-index: -1
 
         &_role
@@ -178,6 +185,11 @@
             line-height: 120%
             color: #FFFFFF
             margin-top: 84px
+
+        &_image
+            position: absolute
+            top: 53px  
+            right: 50px
     
     .share-text
         width: 408px
@@ -188,3 +200,8 @@
         font-size: 19px
         line-height: 21px
         color: #5D5D5D
+
+    .fb-btn
+        width: 50px
+        height: 50px
+        background-image: url("/img/facebook.png")

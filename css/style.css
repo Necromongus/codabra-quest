@@ -42,6 +42,22 @@ body {
           box-sizing: border-box;
 }
 
+main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 1440px) {
   #main-form {
     display: -webkit-box;
@@ -67,6 +83,7 @@ body {
   }
   #start-label {
     width: 800px;
+    height: 50px;
     font-family: Geometria Bold;
     font-size: 40px;
     line-height: 50px;
@@ -75,8 +92,11 @@ body {
     text-align: center;
     text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
     margin: 0 auto;
-    margin-top: 45px;
-    margin-bottom: 47px;
+    margin-top: 44px;
+    margin-bottom: 39px;
+  }
+  #start-image {
+    height: 330px;
   }
   #start-text {
     width: 697px;
@@ -87,14 +107,15 @@ body {
     text-align: center;
     color: white;
     margin: 0 auto;
-    margin-top: 34px;
-    margin-bottom: 55px;
+    margin-top: 57px;
+    margin-bottom: 33px;
   }
   #start-btn {
     color: white;
-    background-color: white;
-    width: 370px;
-    height: 85px;
+    background-image: url("/img/s-btn.png");
+    background-position: center center;
+    width: 380px;
+    height: 95px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -110,11 +131,11 @@ body {
     content: "";
     position: absolute;
     top: -50px;
-    right: -30px;
+    right: -24px;
   }
   .start-btn_text {
     margin: auto;
-    font-family: Geometria Regular;
+    font-family: Geometria Bold;
     font-size: 23px;
     line-height: 29px;
     color: #06001F;
@@ -191,8 +212,8 @@ body {
             box-sizing: border-box;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+    -webkit-box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
   }
   .ending-form-top_text {
     color: #ffffff;
@@ -205,7 +226,7 @@ body {
     position: relative;
   }
   .ending-form-result-wrapper {
-    padding-top: 56px;
+    padding-top: 80px;
     padding-left: 78px;
   }
   .ending-form-bottom {
@@ -235,13 +256,13 @@ body {
     margin-top: 390px;
   }
   #ending-form-result {
-    width: 920px;
-    height: 390px;
-    background-image: url("/img/1e.png");
+    width: 888px;
+    height: 540px;
+    background-image: url("/img/e1bg.png");
     background-size: cover;
     position: absolute;
-    top: 0px;
-    left: -34px;
+    top: -44px;
+    left: -20px;
     z-index: -1;
   }
   #ending-form-result_role {
@@ -260,6 +281,11 @@ body {
     color: #FFFFFF;
     margin-top: 84px;
   }
+  #ending-form-result_image {
+    position: absolute;
+    top: 53px;
+    right: 50px;
+  }
   .share-text {
     width: 408px;
     height: 21px;
@@ -269,6 +295,11 @@ body {
     font-size: 19px;
     line-height: 21px;
     color: #5D5D5D;
+  }
+  .fb-btn {
+    width: 50px;
+    height: 50px;
+    background-image: url("/img/facebook.png");
   }
 }
 
@@ -299,18 +330,22 @@ body {
     width: 550px;
     height: 50px;
     font-family: Geometria Bold;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
     color: #E9FCFF;
     text-align: center;
     text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 0px auto;
+  }
+  #start-image {
+    height: 250px;
     margin: 10px auto;
   }
   #start-text {
     width: 580px;
-    height: 130px;
+    height: 110px;
     font-family: Geometria Regular;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 23px;
     text-align: center;
     color: white;
@@ -318,30 +353,35 @@ body {
   }
   #start-btn {
     color: white;
-    background-color: white;
-    width: 330px;
-    height: 60px;
+    background-image: url("/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
     cursor: pointer;
+    margin-top: 10px;
   }
   #start-btn::after {
     background-image: url("/img/Button-pixels.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 70px;
+    background-size: contain;
+    width: 50px;
     height: 65px;
     content: "";
     position: absolute;
-    top: -50px;
-    right: -30px;
+    top: -20px;
+    right: -20px;
   }
   .start-btn_text {
     margin: auto;
-    font-family: Geometria Regular;
-    font-size: 20px;
+    font-family: Geometria Bold;
+    font-size: 16px;
     line-height: 29px;
     color: #06001F;
     text-align: center;
@@ -513,11 +553,11 @@ body {
   }
 }
 
-#question, .btn {
+#start-label, #start-text, #start-btn, #start-image {
   display: none;
 }
 
-#main-form {
+#ending-form {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
