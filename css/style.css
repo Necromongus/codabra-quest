@@ -166,7 +166,8 @@ main {
     display: flex;
   }
   #image img {
-    width: 90%;
+    width: 31vw;
+    height: 17.5vw;
     margin: 0 auto;
   }
   .btns {
@@ -455,7 +456,8 @@ main {
     display: flex;
   }
   #image img {
-    width: 90%;
+    width: 85vw;
+    height: 47.8vw;
     margin: 0 auto;
   }
   .btns {
@@ -509,11 +511,11 @@ main {
   }
 }
 
-#question, .btns, #image {
+#start-label, #start-text, #start-btn, #start-image {
   display: none;
 }
 
-#main-form {
+#ending-form {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
