@@ -1,0 +1,246 @@
+@media (min-width: 1440px) {
+  #main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 850px;
+    height: 880px;
+    margin: auto auto;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
+  }
+  #start-label {
+    width: 800px;
+    height: 50px;
+    font-family: Geometria Bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.12em;
+    color: #E9FCFF;
+    text-align: center;
+    text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 39px;
+  }
+  #start-image {
+    height: 330px;
+  }
+  #start-text {
+    width: 697px;
+    height: 175px;
+    font-family: Geometria Regular;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-top: 57px;
+    margin-bottom: 33px;
+  }
+  #start-btn {
+    color: white;
+    background-image: url("/img/s-btn.png");
+    background-position: center center;
+    width: 380px;
+    height: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  #start-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 65px;
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -24px;
+  }
+  .start-btn_text {
+    margin: auto;
+    font-family: Geometria Bold;
+    font-size: 23px;
+    line-height: 29px;
+    color: #06001F;
+  }
+  #question {
+    width: 730px;
+    height: 94px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Geometria Bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #E9FCFF;
+  }
+  #image img {
+    width: 550px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    width: 600px;
+    cursor: pointer;
+    height: 70px;
+    background: #000000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+  }
+  .btn_text {
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 20px;
+  }
+  .btn:hover {
+    border: 3px solid #FFDD9B;
+    -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+            box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+  }
+  #ending-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ending-form-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 82px;
+    width: 849px;
+    background-color: #000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
+  }
+  .ending-form-top_text {
+    color: #ffffff;
+    margin: auto;
+    font-family: Geometria Regular;
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .ending-form-wrapper {
+    position: relative;
+  }
+  .ending-form-result-wrapper {
+    padding-top: 80px;
+    padding-left: 78px;
+  }
+  .ending-form-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 408px;
+    width: 849px;
+    background-color: #000;
+    border: 3px solid #8FF0FF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
+    margin: 0 auto;
+    margin-top: 390px;
+  }
+  #ending-form-result {
+    width: 888px;
+    height: 540px;
+    background-image: url("/img/e1bg.png");
+    background-size: cover;
+    position: absolute;
+    top: -44px;
+    left: -20px;
+    z-index: -1;
+  }
+  #ending-form-result_role {
+    font-family: Geometria Bold;
+    font-size: 38px;
+    line-height: 38px;
+    color: #E9FCFF;
+    width: 328px;
+  }
+  #ending-form-result_description {
+    width: 391px;
+    height: 133px;
+    font-family: Geometria Regular;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-top: 84px;
+  }
+  #ending-form-result_image {
+    position: absolute;
+    top: 53px;
+    right: 50px;
+  }
+  .share-text {
+    width: 408px;
+    height: 21px;
+    margin-top: 21px;
+    text-align: center;
+    font-family: Geometria Regular;
+    font-size: 19px;
+    line-height: 21px;
+    color: #5D5D5D;
+  }
+  .fb-btn {
+    width: 50px;
+    height: 50px;
+    background-image: url("/img/facebook.png");
+  }
+}
+/*# sourceMappingURL=ending.css.map */
