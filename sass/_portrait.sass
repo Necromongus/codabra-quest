@@ -15,51 +15,70 @@
         box-shadow: 0 0 20px rgba(#0042ED,0.86) /* Параметры тени */
         
     #start-label
-        width: 300px
-        height: 35px
-        font-family: Geometria Bold
-        font-size: 22px
-        line-height: 35px
+        width: 95%//300px
+        //height: 35px
+        font-family: Geometria Medium
+        font-size: 3.3vh//22px
+        line-height: 3.3vh//35px
         color: #E9FCFF
         text-align: center
         text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED /* Параметры тени */
         margin: 0px auto
 
+    #start-image
+        width: 70%
+
     #start-text
-        width: 280px
-        height: 130px 
-        font-family: Geometria Regular
-        font-size: 16px
-        line-height: 18px
+        width: 95%//280px
+        //height: 130px 
+        font-family: Geometria Medium
+        font-size: 2.0vh//16px
+        line-height: 2.7vh//18px
         text-align: center
         color: white
         margin: 0 auto
 
     #start-btn
         color: white
-        background-color: white
-        width: 250px
-        height: 60px
+        // background-color: white
+        // width: 250px
+        // height: 60px
+        background-image: url("/img/s-btn.png")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+        width: 80%//250px
+        height: 15%//60px
         display: flex
         position: relative
         cursor: pointer
-        margin-top: 30px
-        &::after            
+        //margin-top: 30px
+        &::after   
             background-image: url("/img/Button-pixels.png")
             background-repeat: no-repeat
-            background-position: 0 0
-            width: 70px
-            height: 65px
+            background-position: center center
+            background-size: contain
+            width: 15vw//25%//70px
+            height: 15vw//60%//65px
             content: ""
             position: absolute
-            top: -50px
-            right: -25px
+            top: -5.0vh//-40%//-50px
+            right: -7.4vw//-10%//-25px         
+            // background-image: url("/img/Button-pixels.png")
+            // background-repeat: no-repeat
+            // background-position: 0 0
+            // width: 70px
+            // height: 65px
+            // content: ""
+            // position: absolute
+            // top: -50px
+            // right: -25px
 
     .start-btn_text
         margin: auto
-        font-family: Geometria Regular
-        font-size: 20px
-        line-height: 29px
+        font-family: Geometria Bold
+        font-size: 2.5vh//20px
+        line-height: 3vh//29px
         color: #06001F    
         text-align: center  
 

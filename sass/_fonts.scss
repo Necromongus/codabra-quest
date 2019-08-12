@@ -17,3 +17,13 @@ url('/fonts/Geometria Regular/Geometria.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+
+@font-face {
+    font-family: 'Geometria Medium';
+    src: url('/fonts/Geometria Medium/Geometria-Medium.eot');
+    src: url('/fonts/Geometria Medium/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Geometria Medium/Geometria-Medium.woff') format('woff'),
+    url('/fonts/Geometria Medium/Geometria-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
