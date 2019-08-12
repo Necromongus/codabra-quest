@@ -3,8 +3,10 @@
         display: flex
         flex-direction: column
         align-items: center
-        width: 307px
-        height: 516px //изменил высоту!
+        align-content: center
+        justify-content: space-between
+        width: 95%//307px
+        height: 90%//516px //изменил высоту!
         margin: auto auto
         background: #000000
         border: 3px solid #8FF0FF
@@ -62,26 +64,29 @@
         text-align: center  
 
     #question 
-        width: 280px
-        height: 50px
+        width: 90%//280px
+        // height: 50px
         margin: 0 auto
         margin-top: 20px
         margin-bottom: 20px
         font-family: Geometria Bold
-        font-size: 12px
-        line-height: 15px
+        font-size: 4vw//12px
+        line-height: 4vw
         text-align: center
         color: #E9FCFF
 
-    #image img
-        width: 274px
-        margin-bottom: 20px
+    #image 
+        display: flex
+        img
+            width: 90%//274px
+            margin: 0 auto
+            margin-bottom: 20px
 
     .btn 
         display: flex
         color: #fff
         text-align: center
-        width: 282px
+        width: 90%//282px
         cursor: pointer
         height: 70px
         background: #000000
@@ -93,7 +98,7 @@
         &_text
             margin: auto
             font-family: Geometria Regular
-            font-size: 11px 
+            font-size: 3.2vw//11px 
         &:hover
             border: 3px solid #FFDD9B
             box-shadow: 0 0 15px rgba(#C18000,0.86)
