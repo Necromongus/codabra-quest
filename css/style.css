@@ -154,6 +154,7 @@ main {
   }
   #image img {
     width: 550px;
+    margin-bottom: 20px;
   }
   .btn {
     display: -webkit-box;
@@ -444,8 +445,13 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 307px;
-    height: 516px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 95%;
+    height: 90%;
     margin: auto auto;
     background: #000000;
     border: 3px solid #8FF0FF;
@@ -508,19 +514,24 @@ main {
     text-align: center;
   }
   #question {
-    width: 280px;
-    height: 50px;
+    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: Geometria Bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 4vw;
+    line-height: 4vw;
     text-align: center;
     color: #E9FCFF;
   }
+  #image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #image img {
-    width: 274px;
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
   .btn {
@@ -529,7 +540,7 @@ main {
     display: flex;
     color: #fff;
     text-align: center;
-    width: 282px;
+    width: 90%;
     cursor: pointer;
     height: 70px;
     background: #000000;
@@ -544,7 +555,7 @@ main {
   .btn_text {
     margin: auto;
     font-family: Geometria Regular;
-    font-size: 11px;
+    font-size: 3.2vw;
   }
   .btn:hover {
     border: 3px solid #FFDD9B;
