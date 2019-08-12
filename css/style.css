@@ -87,31 +87,35 @@ main {
             box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
   }
   #start-label {
-    width: 300px;
-    height: 35px;
+    width: 90%;
     font-family: Geometria Bold;
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 3vh;
+    line-height: 3vh;
     color: #E9FCFF;
     text-align: center;
     text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
     margin: 0px auto;
   }
+  #start-image {
+    width: 55%;
+  }
   #start-text {
-    width: 280px;
-    height: 130px;
+    width: 90%;
     font-family: Geometria Regular;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 2.5vh;
+    line-height: 2.7vh;
     text-align: center;
     color: white;
     margin: 0 auto;
   }
   #start-btn {
     color: white;
-    background-color: white;
-    width: 250px;
-    height: 60px;
+    background-image: url("/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    height: 12%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,18 +125,19 @@ main {
   #start-btn::after {
     background-image: url("/img/Button-pixels.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 70px;
-    height: 65px;
+    background-position: center center;
+    background-size: contain;
+    width: 7vw;
+    height: 8vh;
     content: "";
     position: absolute;
-    top: -50px;
-    right: -25px;
+    top: -2.3vw;
+    right: -6.4vh;
   }
   .start-btn_text {
     margin: auto;
     font-family: Geometria Regular;
-    font-size: 20px;
+    font-size: 2.2vh;
     line-height: 29px;
     color: #06001F;
     text-align: center;
@@ -355,7 +360,7 @@ main {
   }
 }
 
-#start-label, #start-text, #start-btn, #start-image {
+#question, .btns, #image {
   display: none;
 }
 
