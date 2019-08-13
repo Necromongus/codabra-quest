@@ -5,7 +5,7 @@
         align-items: center
         align-content: center
         justify-content: space-around
-        width: 72vh//35%//307px
+        width: 79vh//72vh//35%//307px
         height: 90%//516px //изменил высоту!
         margin: auto auto
         background: #000000
@@ -18,8 +18,9 @@
         width: 90%//300px
         //height: 35px
         font-family: Geometria Bold
-        font-size: 3vh//22px
-        line-height: 3vh//35px
+        font-size: 3.5vh//22px
+        line-height: 5vh//35px
+        letter-spacing: 0.7vh
         color: #E9FCFF
         text-align: center
         text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED /* Параметры тени */
@@ -73,42 +74,43 @@
         text-align: center  
 
     #question 
-        width: 95%//280px
+        width: 90%//280px
         // height: 50px
         margin: 0 auto
         // margin-top: 20px
         // margin-bottom: 20px
         font-family: Geometria Bold
-        font-size: 2.2vh//12px
-        line-height: 2.2vh
+        font-size: 2.5vh//2.2vh//12px
+        line-height: 2.8vh
         text-align: center
         color: #E9FCFF
         margin-top: 1%
 
     #image 
         display: flex
+        
         img
-            width: 31vw//90%//274px
-            height: 17.5vw
+            width: 59vh//29vw//90%//274px
+            height: 33.2vh//16.3vw
             margin: 0 auto
             //margin-bottom: 5%//20px
 
     .btns
         display: flex
         flex-direction: column
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
         align-content: center
         width: 100%
-        height: 45%  
+        height: 43%  
 
     .btn 
         display: flex
         color: #fff
         text-align: center
-        width: 90%//282px
+        width: 80%//282px
         cursor: pointer
-        height: 20%//70px
+        height: 17%//70px
         background: #000000
         border: 3px solid #8FF0FF
         box-sizing: border-box
@@ -118,7 +120,8 @@
         &_text
             margin: auto
             font-family: Geometria Regular
-            font-size: 2vh//11px 
+            font-size: 2vh//11px
+            line-height: 2vh 
         &:hover
             border: 3px solid #FFDD9B
             box-shadow: 0 0 15px rgba(#C18000,0.86)
@@ -137,14 +140,14 @@
         justify-content: center
         position: relative    
         height: 90%
-        width: 72vh  
+        width: 79vh//72vh  
 
     .ending-form
         &-top
             position: relative
             display: flex
             height: 10%
-            width: 72vh
+            width: 79vh//72vh
             background-color: #000
             border: 3px solid #8FF0FF
             box-sizing: border-box
@@ -174,7 +177,7 @@
             justify-content: space-around
             height: 45%//408px
             //width: 849px
-            width: 72vh
+            width: 79vh//72vh
             background-color: #000
             border: 3px solid #8FF0FF
             box-sizing: border-box
@@ -183,13 +186,15 @@
             box-shadow: 0 15px 20px rgba(#0042ED,0.86) /* Параметры тени */
             margin: 0 auto
             margin-top: 55%//350px
+
+            
         
 
     #ending-form-result
         
         //width: 888px
-        width: 75vh
-        height: 43vh//510%//540px
+        width: 82.5vh//75vh
+        height: 47vh//510%//540px
         background-image: url("/img/e1bg.png")
         background-size: cover
         background-repeat: no-repeat
@@ -239,7 +244,35 @@
     .share-btns
         display: flex
         flex-flow: row nowrap
+        margin: -4vh 0
 
     .share-icon
-        width: 12vh
+        width: 10vh
+        cursor: pointer
+
+    #future-role
+        width: 85%
+        text-align: center
+        font-family: Geometria Medium
+        font-size: 2vh
     
+    .ending-text
+        text-align: center
+        font-family: Geometria Medium
+        font-size: 2vh
+
+    #ending-btn
+        width: 46vh//58.7%
+        height: 9vh
+        color: #000000
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        margin-bottom: 1%
+        &_text
+            text-align: center
+            font-family: Geometria Bold
+            font-size: 2vh
+            width: 35vh

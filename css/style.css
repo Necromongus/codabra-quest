@@ -83,7 +83,7 @@ main {
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 72vh;
+    width: 79vh;
     height: 90%;
     margin: auto auto;
     background: #000000;
@@ -97,8 +97,9 @@ main {
   #start-label {
     width: 90%;
     font-family: Geometria Bold;
-    font-size: 3vh;
-    line-height: 3vh;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    letter-spacing: 0.7vh;
     color: #E9FCFF;
     text-align: center;
     text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED;
@@ -151,11 +152,11 @@ main {
     text-align: center;
   }
   #question {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     font-family: Geometria Bold;
-    font-size: 2.2vh;
-    line-height: 2.2vh;
+    font-size: 2.5vh;
+    line-height: 2.8vh;
     text-align: center;
     color: #E9FCFF;
     margin-top: 1%;
@@ -166,8 +167,8 @@ main {
     display: flex;
   }
   #image img {
-    width: 31vw;
-    height: 17.5vw;
+    width: 59vh;
+    height: 33.2vh;
     margin: 0 auto;
   }
   .btns {
@@ -178,16 +179,15 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
     width: 100%;
-    height: 45%;
+    height: 43%;
   }
   .btn {
     display: -webkit-box;
@@ -195,9 +195,9 @@ main {
     display: flex;
     color: #fff;
     text-align: center;
-    width: 90%;
+    width: 80%;
     cursor: pointer;
-    height: 20%;
+    height: 17%;
     background: #000000;
     border: 3px solid #8FF0FF;
     -webkit-box-sizing: border-box;
@@ -210,6 +210,7 @@ main {
     margin: auto;
     font-family: Geometria Regular;
     font-size: 2vh;
+    line-height: 2vh;
   }
   .btn:hover {
     border: 3px solid #FFDD9B;
@@ -237,7 +238,7 @@ main {
             justify-content: center;
     position: relative;
     height: 90%;
-    width: 72vh;
+    width: 79vh;
   }
   .ending-form-top {
     position: relative;
@@ -245,7 +246,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     height: 10%;
-    width: 72vh;
+    width: 79vh;
     background-color: #000;
     border: 3px solid #8FF0FF;
     -webkit-box-sizing: border-box;
@@ -286,7 +287,7 @@ main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     height: 45%;
-    width: 72vh;
+    width: 79vh;
     background-color: #000;
     border: 3px solid #8FF0FF;
     -webkit-box-sizing: border-box;
@@ -299,8 +300,8 @@ main {
     margin-top: 55%;
   }
   #ending-form-result {
-    width: 75vh;
-    height: 43vh;
+    width: 82.5vh;
+    height: 47vh;
     background-image: url("/img/e1bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -352,9 +353,46 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    margin: -4vh 0;
   }
   .share-icon {
-    width: 12vh;
+    width: 10vh;
+    cursor: pointer;
+  }
+  #future-role {
+    width: 85%;
+    text-align: center;
+    font-family: Geometria Medium;
+    font-size: 2vh;
+  }
+  .ending-text {
+    text-align: center;
+    font-family: Geometria Medium;
+    font-size: 2vh;
+  }
+  #ending-btn {
+    width: 46vh;
+    height: 9vh;
+    color: #000000;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-bottom: 1%;
+  }
+  #ending-btn_text {
+    text-align: center;
+    font-family: Geometria Bold;
+    font-size: 2vh;
+    width: 35vh;
   }
 }
 
@@ -511,11 +549,11 @@ main {
   }
 }
 
-#start-label, #start-text, #start-btn, #start-image {
+#question, .btns, #image {
   display: none;
 }
 
-#ending-form {
+#main-form {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
