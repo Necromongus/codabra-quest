@@ -708,7 +708,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    margin-top: -4vh;
+    margin-top: -4.5vh;
     margin-bottom: -5vh;
   }
   .share-icon {
