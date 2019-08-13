@@ -355,11 +355,35 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin: -4vh 0;
+  }
+  .share-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .share-icon {
     width: 9vh;
     cursor: pointer;
+  }
+  .share-icon img {
+    margin: 0 auto;
   }
   #future-role {
     width: 90%;
@@ -590,7 +614,7 @@ main {
     color: #ffffff;
     margin: auto;
     font-family: Geometria Medium;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 2vw;
     letter-spacing: 0.45vw;
   }
@@ -599,7 +623,7 @@ main {
     height: 80%;
   }
   .ending-form-result-wrapper {
-    padding-top: 7vh;
+    padding-top: 6vh;
     padding-left: 3vh;
   }
   .ending-form-bottom {
@@ -617,7 +641,7 @@ main {
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 45%;
+    height: 55%;
     width: 100%;
     background-color: #000;
     border: 3px solid #8FF0FF;
@@ -646,15 +670,15 @@ main {
     font-size: 6.5vw;
     line-height: 6.5vw;
     color: #E9FCFF;
-    width: 50%;
+    width: 70%;
   }
   #ending-form-result_description {
-    width: 50%;
-    font-family: Geometria Regular;
+    width: 55%;
+    font-family: Geometria Medium;
     font-size: 3.6vw;
-    line-height: 3.6vw;
+    line-height: 4.6vw;
     color: #FFFFFF;
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
   #ending-form-result_image {
     position: absolute;
@@ -666,9 +690,9 @@ main {
   .share-text {
     width: 72vw;
     text-align: center;
-    font-family: Geometria Regular;
+    font-family: Geometria Medium;
     font-size: 1.8vh;
-    line-height: 1.8vh;
+    line-height: 3vh;
     color: #5D5D5D;
   }
   .fb-btn {
@@ -684,23 +708,37 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    margin-top: -1vh;
-    margin-bottom: -3vh;
+    margin-top: -4vh;
+    margin-bottom: -5vh;
   }
   .share-icon {
     width: 80%;
     cursor: pointer;
   }
+  .share-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
   #future-role {
     width: 90%;
     text-align: center;
     font-family: Geometria Medium;
-    font-size: 3.8vw;
+    font-size: 3.5vw;
   }
   .ending-text {
     text-align: center;
     font-family: Geometria Medium;
-    font-size: 3.8vw;
+    font-size: 3.5vw;
+    margin-top: -1vh;
   }
   #ending-btn {
     width: 76vw;
@@ -718,7 +756,7 @@ main {
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
   }
   #ending-btn_text {
     text-align: center;
