@@ -42,7 +42,7 @@ body {
           justify-content: center;
   height: 100%;
   margin: 0;
-  background-image: url("/img/bg4.png");
+  background-image: url("/img/bg.png");
   background-color: #000;
   background-repeat: no-repeat;
   background-position: center center;
@@ -320,21 +320,21 @@ main {
     font-size: 3.4vh;
     line-height: 3.4vh;
     color: #E9FCFF;
-    width: 35vh;
+    width: 40vh;
     letter-spacing: 0.2vh;
   }
   #ending-form-result_description {
-    width: 40vh;
+    width: 50%;
     font-family: Geometria Medium;
     font-size: 2.2vh;
     line-height: 120%;
     color: #FFFFFF;
-    margin-top: 10%;
+    margin-top: 7%;
   }
   #ending-form-result_image {
     position: absolute;
     width: 37vh;
-    top: 15%;
+    top: 10%;
     right: 2%;
     z-index: -1;
   }
@@ -401,29 +401,94 @@ main {
     font-size: 2.2vh;
   }
   #ending-btn {
-    width: 46vh;
-    height: 8vh;
-    color: #000000;
-    background-color: #fff;
+    color: white;
+    background-image: url("/img/e-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 55%;
+    height: 19%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-bottom: 3%;
+    position: relative;
+    cursor: pointer;
+  }
+  #ending-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 7vw;
+    height: 8vh;
+    content: "";
+    position: absolute;
+    top: -2.8vw;
+    right: -7.4vh;
   }
   #ending-btn_text {
-    text-align: center;
+    margin: auto;
     font-family: Geometria Bold;
-    font-size: 2vh;
-    line-height: 2.3vh;
-    width: 35vh;
+    font-size: 2.2vh;
+    line-height: 2.2vh;
+    color: #06001F;
+    text-align: center;
+  }
+  .loading-label {
+    width: 88%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 2.8vh;
+    text-align: center;
+    color: #E9FCFF;
+    margin-top: 1%;
+  }
+  .loading-img {
+    width: 68vh;
+  }
+  .loading-text {
+    width: 75%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 2.8vh;
+    text-align: center;
+    color: #E9FCFF;
+  }
+  .loading-btn {
+    color: white;
+    background-image: url("/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 46%;
+    height: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  .loading-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 7vw;
+    height: 8vh;
+    content: "";
+    position: absolute;
+    top: -2.3vw;
+    right: -6.4vh;
+  }
+  .loading-btn_text {
+    margin: auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 29px;
+    color: #06001F;
+    text-align: center;
   }
 }
 
@@ -645,7 +710,7 @@ main {
         align-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 55%;
+    height: 45%;
     width: 100%;
     background-color: #000;
     border: 3px solid #8FF0FF;
@@ -661,7 +726,7 @@ main {
   #ending-form-result {
     width: 105%;
     height: 60vh;
-    background-image: url("/img/e1bg.png");
+    background-image: url("/img/bg1.png");
     background-size: contain;
     background-repeat: repeat-y;
     position: absolute;
@@ -674,7 +739,7 @@ main {
     font-size: 6.5vw;
     line-height: 6.5vw;
     color: #E9FCFF;
-    width: 70%;
+    width: 92%;
   }
   #ending-form-result_description {
     width: 55%;
@@ -682,7 +747,7 @@ main {
     font-size: 3.6vw;
     line-height: 4.6vw;
     color: #FFFFFF;
-    margin-top: 8vh;
+    margin-top: 4vh;
   }
   #ending-form-result_image {
     position: absolute;
@@ -716,7 +781,7 @@ main {
     margin-bottom: -5vh;
   }
   .share-icon {
-    width: 80%;
+    width: 70%;
     cursor: pointer;
   }
   .share-wrapper {
@@ -745,29 +810,95 @@ main {
     margin-top: -1vh;
   }
   #ending-btn {
-    width: 76vw;
-    height: 14vw;
-    color: #000000;
-    background-color: #fff;
+    color: white;
+    background-image: url("/img/e-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80%;
+    height: 18%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-bottom: 3%;
+    position: relative;
+    cursor: pointer;
+  }
+  #ending-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 15vw;
+    height: 15vw;
+    content: "";
+    position: absolute;
+    top: -5.0vh;
+    right: -9.4vw;
   }
   #ending-btn_text {
-    text-align: center;
+    margin: auto;
     font-family: Geometria Bold;
-    font-size: 3.8vw;
-    line-height: 3.8vw;
-    width: 60vw;
+    font-size: 1.5vh;
+    line-height: 1.5vh;
+    color: #06001F;
+    text-align: center;
+  }
+  .loading-label {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 2.8vh;
+    text-align: center;
+    color: #E9FCFF;
+    margin-top: 1%;
+  }
+  .loading-img {
+    width: 85vw;
+    height: 47.8vw;
+  }
+  .loading-text {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 2.8vh;
+    text-align: center;
+    color: #E9FCFF;
+  }
+  .loading-btn {
+    color: white;
+    background-image: url("/img/s-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80%;
+    height: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  .loading-btn::after {
+    background-image: url("/img/Button-pixels.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 15vw;
+    height: 15vw;
+    content: "";
+    position: absolute;
+    top: -5.0vh;
+    right: -7.4vw;
+  }
+  .loading-btn_text {
+    margin: auto;
+    font-family: Geometria Bold;
+    font-size: 2.5vh;
+    line-height: 29px;
+    color: #06001F;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

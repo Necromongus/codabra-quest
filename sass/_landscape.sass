@@ -191,8 +191,7 @@
             
         
 
-    #ending-form-result
-        
+    #ending-form-result       
         //width: 888px
         width: 80.3vh//75vh
         height: 47vh//510%//540px
@@ -209,22 +208,22 @@
             font-size: 3.4vh//38px
             line-height: 3.4vh//38px
             color: #E9FCFF
-            width: 35vh
+            width: 40vh
             letter-spacing: 0.2vh
             
         &_description
-            width: 40vh//391px
+            width: 50%//40vh//391px
             //height: 133px
             font-family: Geometria Medium
             font-size: 2.2vh//22px
             line-height: 120%
             color: #FFFFFF
-            margin-top: 10%//84px
+            margin-top: 7%//84px
 
         &_image
             position: absolute
             width: 37vh
-            top: 15%//53px  
+            top: 10%//53px  
             right: 2%//50px
             z-index: -1
     
@@ -275,18 +274,109 @@
         font-size: 2.2vh
 
     #ending-btn
-        width: 46vh//58.7%
-        height: 8vh
-        color: #000000
-        background-color: #fff
+        color: white
+        //background-color: white
+        background-image: url("/img/e-btn.png")
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center center
+        width: 55%//250px
+        height: 19%//60px
         display: flex
-        justify-content: center
-        align-items: center
-        align-content: center
-        margin-bottom: 3%
+        position: relative
+        cursor: pointer
+        // margin-top: 30px
+        &::after            
+            background-image: url("/img/Button-pixels.png")
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: contain
+            width: 7vw//25%//70px
+            height: 8vh//60%//65px
+            content: ""
+            position: absolute
+            top: -2.8vw//-40%//-50px
+            right: -7.4vh//-10%//-25px
+
         &_text
-            text-align: center
+            margin: auto
             font-family: Geometria Bold
-            font-size: 2vh
-            line-height: 2.3vh
-            width: 35vh
+            font-size: 2.2vh
+            line-height: 2.2vh
+            color: #06001F    
+            text-align: center          
+
+
+
+        // width: 46vh//58.7%
+        // height: 8vh
+        // color: #000000
+        // background-color: #fff
+        // display: flex
+        // justify-content: center
+        // align-items: center
+        // align-content: center
+        // margin-bottom: 3%
+        // &_text
+        //     text-align: center
+        //     font-family: Geometria Bold
+        //     font-size: 2vh
+        //     line-height: 2.3vh
+        //     width: 35vh
+
+
+    .loading
+        &-label
+            width: 88%
+            margin: 0 auto
+            font-family: Geometria Bold
+            font-size: 2.5vh
+            line-height: 2.8vh
+            text-align: center
+            color: #E9FCFF
+            margin-top: 1%
+        &-img
+            width: 68vh
+
+        &-text
+            width: 75%
+            margin: 0 auto
+            font-family: Geometria Bold
+            font-size: 2.5vh
+            line-height: 2.8vh
+            text-align: center
+            color: #E9FCFF
+
+        &-btn
+            color: white
+            //background-color: white
+            background-image: url("/img/s-btn.png")
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center center
+            width: 46%//250px
+            height: 12%//60px
+            display: flex
+            position: relative
+            cursor: pointer
+            // margin-top: 30px
+            &::after            
+                background-image: url("/img/Button-pixels.png")
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: contain
+                width: 7vw//25%//70px
+                height: 8vh//60%//65px
+                content: ""
+                position: absolute
+                top: -2.3vw//-40%//-50px
+                right: -6.4vh//-10%//-25px
+
+            &_text
+                margin: auto
+                font-family: Geometria Bold
+                font-size: 2.5vh//20px
+                line-height: 29px
+                color: #06001F    
+                text-align: center  
+
