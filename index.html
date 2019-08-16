@@ -29,21 +29,21 @@
     }(document, 'script', 'facebook-jssdk'));</script> -->
     <main>
         <div id="main-form">
-            <div id="start-label">ПУТЕШЕСТВИЕ В ШКОЛУ</div>
-            <div id="question">Ты поднимаешься и попадаешь в большой<br> просторный зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что с ней делать?</div>
-            <img src="/img/0q.png" alt="start-image" id="start-image">
-            <div id="image"><img src="/img/1q.png" alt="image1"></div>
-            <div id="start-text">Это приглашение в самую крутую школу будущего на день открытых дверей. Здесь ты сможешь узнать, какие профессии из мира IT тебе подходят. В нашу школу попасть непросто. Сначала мы проверим твои силы.</div>
-            <div id="start-btn"><div class="start-btn_text">Узнать кто я из мира IT</div></div>
-            <div class="btns">
-                <div id="btn1" class="btn"><div class="ans1 btn_text">Поищу в интернете, что это может быть</div></div>
-                <div id="btn2" class="btn"><div class="ans2 btn_text">Черная коробка? Украшу ее фломастерами<br> и блестками, конечно же</div> </div>
-                <div id="btn3" class="btn"><div class="ans3 btn_text">Сфоткаю и отправлю друзьям, чтоб помогли</div> </div>
-                <div id="btn4" class="btn"><div class="ans4 btn_text">Пну ее ногой и посмотрю, что будет</div> </div>
+            <div id="start-label" class="start">ПУТЕШЕСТВИЕ В ШКОЛУ</div>
+            <div id="question" class="main" style="display: none;">Ты поднимаешься и попадаешь в большой<br> просторный зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что с ней делать?</div>
+            <img src="/img/0q.png" alt="start-image" id="start-image" class="start">
+            <div id="image" class="main" style="display: none;"><img id="img" src="/img/1q.png" alt="image1"></div>
+            <div id="start-text" class="start">Это приглашение в самую крутую школу будущего на день открытых дверей. Здесь ты сможешь узнать, какие профессии из мира IT тебе подходят. В нашу школу попасть непросто. Сначала мы проверим твои силы.</div>
+            <div id="start-btn" onclick="StartQuest();" class="start"><div class="start-btn_text">Узнать кто я из мира IT</div></div>
+            <div class="btns main" style="display: none;">
+                <div id="btn1" class="btn" onclick="screen1.changeContent(); screen1.A()"><div id="ans1" class="btn_text">Поищу в интернете, что это может быть</div></div>
+                <div id="btn2" class="btn" onclick="screen1.changeContent(); screen1.A()"><div id="ans2" class="btn_text">Черная коробка? Украшу ее фломастерами<br> и блестками, конечно же</div> </div>
+                <div id="btn3" class="btn" onclick="screen1.changeContent(); screen1.B()"><div id="ans3" class="btn_text">Сфоткаю и отправлю друзьям, чтоб помогли</div> </div>
+                <div id="btn4" class="btn" onclick="screen1.changeContent(); screen1.B()"><div id="ans4" class="btn_text">Пну ее ногой и посмотрю, что будет</div> </div>
             </div>
             
         </div>
-        <div id="ending-form">
+        <div id="ending-form" style = "display: none">
             <div class="ending-form-top">
                 <div class="ending-form-top_text">Предсказываем, что...</div>
                 <div id="ending-form-result">
@@ -84,5 +84,6 @@
             </div>
         </div>
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>

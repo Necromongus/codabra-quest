@@ -67,6 +67,10 @@ main {
           justify-content: center;
 }
 
+.inv {
+  display: none;
+}
+
 @media (orientation: landscape) {
   #main-form {
     display: -webkit-box;
@@ -298,7 +302,7 @@ main {
     -webkit-box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
             box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
     margin: 0 auto;
-    margin-top: 45%;
+    margin-top: auto;
   }
   #ending-form-result {
     width: 80.3vh;
@@ -652,7 +656,7 @@ main {
     -webkit-box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
             box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
     margin: 0 auto;
-    margin-top: 41vh;
+    margin-top: auto;
   }
   #ending-form-result {
     width: 105%;
@@ -765,13 +769,5 @@ main {
     line-height: 3.8vw;
     width: 60vw;
   }
-}
-
-#question, .btns, #image {
-  display: none;
-}
-
-#main-form {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
