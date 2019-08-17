@@ -677,8 +677,8 @@ main {
             box-sizing: border-box;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    -webkit-box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 -5px 20px rgba(0, 66, 237, 0.86);
+    -webkit-box-shadow: 0 -5px 10px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 -5px 10px rgba(0, 66, 237, 0.86);
   }
   .ending-form-top_text {
     color: #ffffff;
@@ -719,8 +719,8 @@ main {
             box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    -webkit-box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
+    -webkit-box-shadow: 0 15px 30px rgba(0, 66, 237, 0.86);
+            box-shadow: 0 15px 30px rgba(0, 66, 237, 0.86);
     margin: 0 auto;
     margin-top: auto;
   }
