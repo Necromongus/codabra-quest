@@ -30,13 +30,15 @@ function FinishQuest() {
 
 
 class ResultContent {
-    constructor(role, text, img, bg, btnText, dImg){
+    constructor(role, text, img, bg, btnText, dImg, rText, fRole){
         this.role = role;
         this.text = text;
         this.img = img;
         this.bg = bg;
         this.btnText = btnText;
         this.dImg = dImg;
+        this.rText = rText;
+        this.fRole = fRole;
     }
 
     showResult(){
@@ -45,26 +47,34 @@ class ResultContent {
         document.getElementById('ending-form-result_image').src = this.img;
         document.getElementById('ending-form-result').style.backgroundImage = 'url("'+this.bg+'")';
         document.getElementById('ending-btn_text').innerHTML = this.btnText;
+        document.getElementById('ready-text').innerHTML = this.rText;
+        document.getElementById('future-role').innerHTML = this.fRole;
         FinishQuest();
     }
 }
 
+
+
 let result1 = new ResultContent(
-    'Ты - творец виртуальных миров',
+    'Ты — творец виртуальных миров',
     'Твоё воображение безгранично! Если бы судьба мира была в твоих руках, он был бы наполнен роботами-волшебниками и летающими рыбами.',
     '/img/r1.png',
     '/img/bg1.png',
-    'Да! Только сначала запрягу своего дракона',
-    '/img/1e.png'
+    'Да! Только сначала запрягу своего&nbspдракона',
+    '/img/1e.png',
+    "Ну что, готов учиться в нашей школе?",
+    "В будущем ты станешь одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
 let result2 = new ResultContent(
-    'Ты - повелитель живых картин',
+    'Ты — повелитель живых картин',
     'Ты легко создашь крутейший видеоблог или фильм — настоящие&nbspпрофессионалы уже хотят с тобой сотрудничать!',
     '/img/r2.png',
     '/img/bg2.png',
     'Да! Подождите, только камеру включу',
-    '/img/2e.png'
+    '/img/2e.png',
+    "Ну что, готов учиться в нашей школе?",
+    "В будущем ты станешь одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
 let result3 = new ResultContent(
@@ -73,16 +83,20 @@ let result3 = new ResultContent(
     '/img/r3.png',
     '/img/bg3.png',
     'Да! С котом я общаться не научился, научусь хотя бы с роботом-котом',
-    '/img/3e.png'
+    '/img/3e.png',
+    "Ну что, готов учиться в нашей школе?",
+    "В будущем ты станешь одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
 let result4 = new ResultContent(
-    'Ты - повелитель веб-страниц',
+    'Ты — повелитель веб-страниц',
     'Довольствоваться малым – совсем не про тебя! Реализовать твои амбиции лучше всего поможет великий интернет. Там ты реализуешь всё, что задумаешь.',
     '/img/r4.png',
     '/img/bg4.png',
     'Да! А вот тут я не придумала&nbspпанчлайн',
-    '/img/4e.png'
+    '/img/4e.png',
+    "Ну что, готов учиться в нашей школе?",
+    "В будущем ты станешь одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
 let result5 = new ResultContent(
@@ -91,9 +105,66 @@ let result5 = new ResultContent(
     '/img/r5.png',
     '/img/bg5.png',
     'Да! Посмотрим, есть ли у вас какие-нибудь секреты...',
-    '/img/1e.png'
+    '/img/1e.png',
+    "Ну что, готов учиться в нашей школе?",
+    "В будущем ты станешь одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
+let result1p = new ResultContent(
+    'Ваш ребенок — творец виртуальных миров',
+    'Его воображение безгранично! Если бы судьба мира была в его руках, он был бы наполнен роботами-волшебниками и летающими рыбами.',
+    '/img/r1.png',
+    '/img/bg1.png',
+    'Да! Только сначала запряжет своего&nbspдракона',
+    '/img/1e.png',
+    "Ну что, он готов учиться в нашей школе?",
+    "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
+)
+
+
+let result2p = new ResultContent(
+    'Ваш ребенок — повелитель живых картин',
+    'Он легко создаст крутейший видеоблог или фильм — настоящие&nbspпрофессионалы уже хотят с ним сотрудничать!',
+    '/img/r2.png',
+    '/img/bg2.png',
+    'Да! Подождите, только камеру включит',
+    '/img/2e.png',
+    "Ну что, он готов учиться в нашей школе?",
+    "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
+)
+
+let result3p = new ResultContent(
+    'Ваш ребенок — хранитель таинственных языков',
+    'Благодаря железной логике он сможет подчинить себе любого робота. Стоит ему выучить хотя бы один их язык — и они завоюют для него мир.',
+    '/img/r3.png',
+    '/img/bg3.png',
+    'Да! С котом он общаться не научился, научится хотя бы с роботом-котом',
+    '/img/3e.png',
+    "Ну что, он готов учиться в нашей школе?",
+    "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
+)
+
+let result4p = new ResultContent(
+    'Ваш ребенок — повелитель веб-страниц',
+    'Довольствоваться малым – совсем не про него! Реализовать его амбиции лучше всего поможет великий интернет. Там он реализует всё, что задумает.',
+    '/img/r4.png',
+    '/img/bg4.png',
+    'Да! А вот тут я не придумала&nbspпанчлайн',
+    '/img/4e.png',
+    "Ну что, он готов учиться в нашей школе?",
+    "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
+)
+
+let result5p = new ResultContent(
+    'Ваш ребенок — мастер тёмных секретов',
+    'Его внимательности позавидует любой сыщик! Ни одна тайна во всей вселенной не скроется от его зорких глаз.',
+    '/img/r5.png',
+    '/img/bg5.png',
+    'Да! Он посмотрит, есть ли у вас какие-нибудь секреты...',
+    '/img/1e.png',
+    "Ну что, он готов учиться в нашей школе?",
+    "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
+)
 
 class MainContent {
     constructor(questionText, img, ans1, ans1c, ans2, ans2c, ans3, ans3c, ans4, ans4c, nextStep){
@@ -220,6 +291,34 @@ class MainContent {
         }
         LoadScreen();
     }
+
+    calculateDirection4a(){
+        if (MainContent.countRA > MainContent.countRB) {
+            document.getElementById('load-btn').setAttribute('onclick', 'result1p.showResult();')
+        }
+        else{
+            document.getElementById('load-btn').setAttribute('onclick', 'result2p.showResult();')
+        }
+        LoadScreen();
+    }
+
+    calculateDirection4b(){
+        if ((MainContent.countRA > MainContent.countRB) && (MainContent.countRA > MainContent.countRC)) {
+            document.getElementById('load-btn').setAttribute('onclick', 'result5p.showResult();')
+        }
+        else{
+            if ((MainContent.countRB > MainContent.countRA) && (MainContent.countRB > MainContent.countRC)) {
+                document.getElementById('load-btn').setAttribute('onclick', 'result3p.showResult();')
+            }
+            else{
+                if ((MainContent.countRC > MainContent.countRA) && (MainContent.countRC > MainContent.countRB)) {
+                    document.getElementById('load-btn').setAttribute('onclick', 'result4p.showResult();')
+                }
+            }
+        }  
+        LoadScreen();
+    }
+
 
     A(){
         MainContent.countA += 1;
@@ -674,7 +773,7 @@ let screen48a = new MainContent(
     '"Да! Поскорей бы выложить фотки с другой планеты..."', "",
     '"Слишком подозрительное предложение. Мы же едва знакомы!"', "",
     '"Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей"', "",
-    "screen48a.calculateDirection1a();"
+    "screen48a.calculateDirection4a();"
 )
 
 let screen45b = new MainContent(
@@ -724,7 +823,7 @@ let screen48b = new MainContent(
     '"Да! Поскорей бы выложить фотки с другой планеты..."', "screen12.RC();",
     '"Слишком подозрительное предложение. Мы же едва знакомы!"', "screen12.RB();",
     '"Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей"', "screen12.RB();",
-    "screen48b.calculateDirection2b();"
+    "screen48b.calculateDirection4b();"
 )
 
 
