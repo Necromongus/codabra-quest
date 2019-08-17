@@ -244,6 +244,12 @@ main {
     height: 90%;
     width: 79vh;
   }
+  #ending-fact_img {
+    position: absolute;
+    width: 15vw;
+    right: -16vw;
+    overflow: hidden;
+  }
   .ending-form-top {
     position: relative;
     display: -webkit-box;
@@ -663,6 +669,9 @@ main {
     position: relative;
     height: 90%;
     width: 95%;
+  }
+  #ending-form #ending-fact_img {
+    display: none;
   }
   .ending-form-top {
     position: relative;
