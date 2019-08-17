@@ -1,6 +1,6 @@
-const startElements = document.querySelectorAll('.start');
-const mainElements = document.querySelectorAll('.main');
-const loadElements = document.querySelectorAll('.load');
+let startElements = document.querySelectorAll('.start');
+let mainElements = document.querySelectorAll('.main');
+let loadElements = document.querySelectorAll('.load');
 
 
 function StartQuest() {
@@ -10,6 +10,8 @@ function StartQuest() {
     for (const mainElement of mainElements){
         mainElement.style.display = '';
     }
+    document.querySelector('.btns').setAttribute('onmousedown', "return false");
+    document.querySelector('.btns').setAttribute('onselectstart', "return false");
 }
 
 function LoadScreen() {
@@ -22,12 +24,10 @@ function LoadScreen() {
     }
 }
 
-
 function FinishQuest() {
     document.getElementById('main-form').style.display = 'none';
     document.getElementById('ending-form').style.display = '';
 }
-
 
 class ResultContent {
     constructor(role, text, img, bg, btnText, dImg, rText, fRole){
@@ -52,8 +52,6 @@ class ResultContent {
         FinishQuest();
     }
 }
-
-
 
 let result1 = new ResultContent(
     'Ты — творец виртуальных миров',
@@ -226,7 +224,6 @@ class MainContent {
         }
     }
 
-
     calculateDirection1a(){
         if (MainContent.countRA > MainContent.countRB) {
             document.getElementById('load-btn').setAttribute('onclick', 'result1.showResult();')
@@ -319,7 +316,6 @@ class MainContent {
         LoadScreen();
     }
 
-
     A(){
         MainContent.countA += 1;
         console.log("A - " + MainContent.countA);
@@ -344,11 +340,6 @@ class MainContent {
         MainContent.countRC += 1;
         console.log("RC - " + MainContent.countRC);
     }
-
-
-
-
-
 }
 
 MainContent.countA = 0;
@@ -813,7 +804,7 @@ let screen48bZ = new MainContent(
     "Да! Поскорей бы выложить фотки с другой планеты...", "",
     "Слишком подозрительное предложение. Мы же едва знакомы!", "",
     "Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей", "",
-    "screen28b.calculateDirection2b();"
+    "screen28b.calculateDirection4b();"
 )
 
 let screen48b = new MainContent(
