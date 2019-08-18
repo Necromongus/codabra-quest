@@ -91,10 +91,10 @@ main {
     height: 90%;
     margin: auto auto;
     background: #000000;
-    border: 3px solid #8FF0FF;
+    border: 0.3vh solid #8FF0FF;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 2vh;
     -webkit-box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
             box-shadow: 0 0 20px rgba(0, 66, 237, 0.86);
   }
@@ -203,12 +203,12 @@ main {
     cursor: pointer;
     height: 17%;
     background: #000000;
-    border: 3px solid #8FF0FF;
+    border: 0.3vh solid #8FF0FF;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border-radius: 12px;
-    -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
-            box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
+    border-radius: 1.2vh;
+    -webkit-box-shadow: 0 0 1.5vh rgba(0, 66, 237, 0.86);
+            box-shadow: 0 0 1.5vh rgba(0, 66, 237, 0.86);
   }
   .btn_text {
     margin: auto;
@@ -217,9 +217,9 @@ main {
     line-height: 2vh;
   }
   .btn:hover {
-    border: 3px solid #FFDD9B;
-    -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
-            box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);
+    border: 0.3vh solid #FFDD9B;
+    -webkit-box-shadow: 0 0 1.5vh rgba(193, 128, 0, 0.86);
+            box-shadow: 0 0 1.5vh rgba(193, 128, 0, 0.86);
   }
   #btn4 {
     margin-bottom: 3%;
