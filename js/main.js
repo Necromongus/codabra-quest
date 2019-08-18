@@ -204,8 +204,6 @@ let result5p = new ResultContent(
     "В будущем он станет одним из этих мастеров: криптоаналитик, хакер или системный администратор"
 )
 
-
-
 class MainContent {
     constructor(questionText, img, ans1, ans1c, ans2, ans2c, ans3, ans3c, ans4, ans4c, nextStep){
         this.questionText = questionText;
