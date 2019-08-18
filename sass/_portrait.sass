@@ -13,7 +13,21 @@
         box-sizing: border-box
         border-radius: 20px
         box-shadow: 0 0 20px rgba(#0042ED,0.86) /* Параметры тени */
+        transition: height 500ms cubic-bezier(0, .5, .5, 1)
         
+    .start
+        opacity: 1
+        transition: opacity 500ms cubic-bezier(0, .5, .5, 1)
+
+    .main
+        opacity: 0
+        transition: opacity 500ms cubic-bezier(0, .5, .5, 1)
+
+    .load
+        opacity: 0
+        transition: opacity 500ms cubic-bezier(0, .5, .5, 1)
+
+
     #start-label
         width: 95%
         font-family: Geometria Medium
@@ -110,7 +124,7 @@
             margin: auto
             font-family: Geometria Regular
             font-size: 3.2vw
-        &:hover
+        &:active
             border: 3px solid #FFDD9B
             box-shadow: 0 0 15px rgba(#C18000,0.86)
 
@@ -177,7 +191,8 @@
             border-bottom-right-radius: 20px
             box-shadow: 0 15px 30px rgba(#0042ED,0.86) /* Параметры тени */
             margin: 0 auto
-            margin-top: auto
+            margin-top: 0//auto
+            transition: margin-top 500ms cubic-bezier(0, .5, .5, 1)
 
             
         
@@ -192,6 +207,8 @@
         top: 65%
         left: -2.5%
         z-index: -1
+        opacity: 0
+        transition: opacity 300ms cubic-bezier(0, .5, .5, 1)
 
         &_role
             font-family: Geometria Bold

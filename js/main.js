@@ -2,19 +2,35 @@ let startElements = document.querySelectorAll('.start');
 let mainElements = document.querySelectorAll('.main');
 let loadElements = document.querySelectorAll('.load');
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
-function StartQuest() {
+async function StartQuest() {
+    for (const startElement of startElements){
+        startElement.style.opacity = '0';
+    }
+    await sleep(500);
     for (const startElement of startElements){
         startElement.style.display = 'none';
     }
     for (const mainElement of mainElements){
         mainElement.style.display = '';
     }
+    await sleep(10);
+    for (const mainElement of mainElements){
+        mainElement.style.opacity = '1';
+    }
+
     document.querySelector('.btns').setAttribute('onmousedown', "return false");
     document.querySelector('.btns').setAttribute('onselectstart', "return false");
 }
 
-function LoadScreen() {
+async function LoadScreen() {
+    for (const mainElement of mainElements){
+        mainElement.style.opacity = '0';
+    }
+    await sleep(500);
     for (const mainElement of mainElements){
         mainElement.style.display = 'none';
     }
@@ -22,11 +38,31 @@ function LoadScreen() {
     for (const mainElement of loadElements){
         mainElement.style.display = '';
     }
+    await sleep(10);
+    for (const mainElement of loadElements){
+        mainElement.style.opacity = '1';
+    }
 }
 
-function FinishQuest() {
+
+async function FinishQuest() {
+    for (const loadElement of loadElements){
+        loadElement.style.opacity = '0';
+    }
+    await sleep(500);
+    for (const loadElement of loadElements){
+        loadElement.style.display = 'none';
+    }
+    document.getElementById('main-form').style.height = '54%';
+    await sleep(500);
     document.getElementById('main-form').style.display = 'none';
     document.getElementById('ending-form').style.display = '';
+    await sleep(300);
+    //document.querySelector('.ending-form-bottom').style = '70%'; //70% для моб, 45% для пк
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:landscape) {.ending-form-bottom{margin-top:45%;}} @media (orientation:portrait) {.ending-form-bottom{margin-top:70%;}}</style>";
+    await sleep(300)
+    document.getElementById('ending-form-result').style.opacity = '1';
+
 }
 
 class ResultContent {
@@ -180,7 +216,11 @@ class MainContent {
         this.nextStep = nextStep;
     }
 
-    changeContent(){
+   async changeContent(){
+        for (const mainElement of mainElements){
+            mainElement.style.opacity = '0';
+        }
+        await sleep(400);
         document.getElementById('question').innerHTML = this.questionText;
         document.getElementById('img').src = this.img;
         document.getElementById('ans1').innerHTML = this.ans1[0];
@@ -191,6 +231,11 @@ class MainContent {
         document.getElementById('btn2').setAttribute('onclick', this.ans2[1] + ' ' + this.nextStep);
         document.getElementById('btn3').setAttribute('onclick', this.ans3[1] + ' ' + this.nextStep);
         document.getElementById('btn4').setAttribute('onclick', this.ans4[1] + ' ' + this.nextStep);
+        await sleep(100);
+        for (const mainElement of mainElements){
+            mainElement.style.opacity = '1';
+        }
+        
     }
 
     calculateDirection1(){
