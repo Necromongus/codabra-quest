@@ -172,6 +172,23 @@ main {
     color: #06001F;
     text-align: center;
   }
+  #ru-lang {
+    display: inline-block;
+    color: #AEAEAE;
+    border-right: 0.2vh solid #AEAEAE;
+    padding-right: 1vh;
+  }
+  #en-lang {
+    display: inline-block;
+    color: #443e3e;
+    padding-left: 0.5vh;
+    cursor: pointer;
+  }
+  .change-lang {
+    font-family: Geometria Medium;
+    font-size: 1.7vh;
+    margin-bottom: 2vh;
+  }
   #question {
     width: 90%;
     margin: 0 auto;
@@ -241,6 +258,9 @@ main {
   #btn4 {
     margin-bottom: 3%;
   }
+  .bottom-style {
+    display: none;
+  }
   #ending-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,9 +283,18 @@ main {
   }
   #ending-fact_img {
     position: absolute;
-    width: 15vw;
-    right: -16vw;
+    width: 22.5vw;
+    right: 7.5vw;
+    top: 11vw;
     overflow: hidden;
+    z-index: -2;
+    opacity: 0;
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
+    -webkit-transition: right 400ms cubic-bezier(0, 0.5, 0.5, 1), top 400ms cubic-bezier(0, 0.5, 0.5, 1), -webkit-transform 500ms cubic-bezier(0, 0.5, 0.5, 1);
+    transition: right 400ms cubic-bezier(0, 0.5, 0.5, 1), top 400ms cubic-bezier(0, 0.5, 0.5, 1), -webkit-transform 500ms cubic-bezier(0, 0.5, 0.5, 1);
+    transition: right 400ms cubic-bezier(0, 0.5, 0.5, 1), top 400ms cubic-bezier(0, 0.5, 0.5, 1), transform 500ms cubic-bezier(0, 0.5, 0.5, 1);
+    transition: right 400ms cubic-bezier(0, 0.5, 0.5, 1), top 400ms cubic-bezier(0, 0.5, 0.5, 1), transform 500ms cubic-bezier(0, 0.5, 0.5, 1), -webkit-transform 500ms cubic-bezier(0, 0.5, 0.5, 1);
   }
   .ending-form-top {
     position: relative;
@@ -326,8 +355,8 @@ main {
             box-shadow: 0 15px 20px rgba(0, 66, 237, 0.86);
     margin: 0 auto;
     margin-top: 0;
-    -webkit-transition: margin-top 500ms cubic-bezier(0, 0.5, 0.5, 1);
-    transition: margin-top 500ms cubic-bezier(0, 0.5, 0.5, 1);
+    -webkit-transition: margin-top 1100ms cubic-bezier(0, 0.5, 0.5, 1);
+    transition: margin-top 1100ms cubic-bezier(0, 0.5, 0.5, 1);
   }
   #ending-form-result {
     width: 80.3vh;
@@ -620,6 +649,23 @@ main {
     line-height: 3vh;
     color: #06001F;
     text-align: center;
+  }
+  #ru-lang {
+    display: inline-block;
+    color: #AEAEAE;
+    border-right: 0.2vh solid #AEAEAE;
+    padding-right: 1vh;
+  }
+  #en-lang {
+    display: inline-block;
+    color: #443e3e;
+    padding-left: 0.5vh;
+    cursor: pointer;
+  }
+  .change-lang {
+    font-family: Geometria Medium;
+    font-size: 1.7vh;
+    margin-bottom: 2vh;
   }
   #question {
     width: 90%;

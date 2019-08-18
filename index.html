@@ -35,11 +35,16 @@
             <div id="image" class="main" style="display: none;"><img id="img" src="/img/1q.jpg" alt="image1"></div>
             <div id="start-text" class="start">Это приглашение в самую крутую школу будущего на день открытых дверей. Здесь ты сможешь узнать, какие профессии из мира IT тебе подходят. В нашу школу попасть непросто. Сначала мы проверим твои силы.</div>
             <div id="start-btn" onclick="StartQuest();" class="start"><div class="start-btn_text">Узнать кто я из мира IT</div></div>
+            <div class="change-lang start">
+                <div id="ru-lang">Русский</div>
+                <div id="en-lang" onclick="ChangeLangEn();">English</div>
+            </div>
             <div class="btns main" style="display: none;">
-                <div id="btn1" class="btn" onclick="screen12.changeContent();"><div id="ans1" class="btn_text">Мне даже 10 лет еще нет! Усы, лапы и хвост -<br> вот мои документы.</div></div>
+                <div id="btn1" class="btn" onclick="screen12.changeContent();"><div id="ans1" class="btn_text">Мне даже 10 лет еще нет! О каких<br> документах ты говоришь?!</div></div>
                 <div id="btn2" class="btn" onclick="screen22.changeContent();"><div id="ans2" class="btn_text">Я старше 10, но паспорта у меня пока нет,<br> страничка ВК подойдет?</div> </div>
-                <div id="btn3" class="btn" onclick="screen32.changeContent();"><div id="ans3" class="btn_text">Ты же робот! Поищи мое лицо по базам,<br> а заодно узнаешь, что мне уже есть 14.</div> </div>
-                <div id="btn4" class="btn" onclick="screen42.changeContent();"><div id="ans4" class="btn_text">Здравствуйте, а день открытых дверей для<br> родителей здесь проходит?</div> </div>
+                <div id="btn3" class="btn" onclick="screen32.changeContent();"><div id="ans3" class="btn_text">Ты же робот! Поищи мое лицо по базам,<br> а заодно узнаешь, что мне уже есть 14</div> </div>
+                <div id="btn4" class="btn" onclick="screen42.changeContent();"><div id="ans4" class="btn_text">Я уже в переходном возрасте — с этого света на тот</div></div>
+                <!-- Здравствуйте, а день открытых дверей для<br> родителей здесь проходит? -->
             </div>
             <!-- loading screen -->
             <div class="loading-label load" style = "display: none">Свет гаснет и голос сообщает, что ты прошёл проверку и принят в&nbspсуперкрутую школу будущего!</div>
