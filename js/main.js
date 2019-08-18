@@ -167,7 +167,7 @@ let result5p = new ResultContent(
     "В будущем он станет одним из этих мастеров: 3D-моделлер, художник компьютерной графики или геймдизайнер"
 )
 
-
+result1.showResult();
 
 class MainContent {
     constructor(questionText, img, ans1, ans1c, ans2, ans2c, ans3, ans3c, ans4, ans4c, nextStep){
