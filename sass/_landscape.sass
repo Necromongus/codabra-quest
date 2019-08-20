@@ -30,22 +30,23 @@
     #start-label
         width: 90%
         font-family: Geometria Bold
-        font-size: 3.5vh
+        font-size: 3.2vh
         line-height: 5vh
-        letter-spacing: 0.7vh
+        letter-spacing: 0.4vh
         color: #E9FCFF
         text-align: center
         text-shadow: 1px 1px 2px #0042ED, 0px 0px 10px #0042ED /* Параметры тени */
         margin: 0px auto
+        margin-top: 2vh
 
     #start-image
-        width: 55%
+        width: 40%
 
 
     #start-text
-        width: 90%
+        width: 95%
         font-family: Geometria Medium
-        font-size: 2.5vh
+        font-size: 2.3vh
         line-height: 2.7vh
         text-align: center
         color: white
@@ -62,6 +63,13 @@
         display: flex
         position: relative
         cursor: pointer
+        color: #06001F   
+        text-decoration: none
+        &:hover
+            background-image: url("/img/s-btn-h.png")
+            color: white
+            &::after
+                background-image: url("/img/Button-pixels-h.png")
         &::after            
             background-image: url("/img/Button-pixels.png")
             background-repeat: no-repeat
@@ -79,7 +87,6 @@
         font-family: Geometria Bold
         font-size: 2.5vh
         line-height: 29px
-        color: #06001F    
         text-align: center  
     
     #ru-lang
@@ -139,6 +146,7 @@
         border-radius: 1.2vh//12px
         box-shadow: 0 0 1.5vh rgba(#0042ED,0.86)
         &_text
+            width: 95%
             margin: auto
             font-family: Geometria Regular
             font-size: 2vh
@@ -265,7 +273,7 @@
     .share-text
         width: 56vh
         text-align: center
-        font-family: Geometria Regular
+        font-family: Geometria Medium
         font-size: 2vh
         line-height: 2.3vh
         color: #5D5D5D
@@ -312,11 +320,18 @@
         background-size: contain
         background-repeat: no-repeat
         background-position: center center
-        width: 55%
-        height: 19%
+        width: 60%
+        height: 26%
         display: flex
         position: relative
         cursor: pointer
+        color: #06001F  
+        text-decoration: none  
+        &:hover
+            background-image: url("/img/e-btn-h.png")
+            color: white
+            &::after
+                background-image: url("/img/Button-pixels-h.png")
         &::after            
             background-image: url("/img/Button-pixels.png")
             background-repeat: no-repeat
@@ -333,9 +348,9 @@
             margin: auto
             font-family: Geometria Bold
             font-size: 2.2vh
-            line-height: 2.2vh
-            color: #06001F    
-            text-align: center          
+            line-height: 2.2vh  
+            text-align: center
+            text-decoration: none          
 
 
     .loading
