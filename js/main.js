@@ -292,7 +292,7 @@ let result1En = new ResultContent(
     '/img/r1.png',
     '/img/bg1.png',
     'Sure, just let me saddle up my dragon!',
-    '/img/i1.png',
+    '/img/i1en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be one of these specialists: 3D-modeller, graphic designer or game designer"
 )
@@ -304,7 +304,7 @@ let result2En = new ResultContent(
     '/img/r2.png',
     '/img/bg2.png',
     'Yes, just let me turn on my camera',
-    '/img/i2.png',
+    '/img/i2en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be one of these specialists: animation artist, director or music video director"
 )
@@ -315,7 +315,7 @@ let result3En = new ResultContent(
     '/img/r3.png',
     '/img/bg3.png',
     `Yes! I haven't been able to learn to communicate with my cat, maybe I'll be able to talk to a robotic cat at least`,
-    '/img/i3.png',
+    '/img/i3en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be a software or game developer"
 )
@@ -327,7 +327,7 @@ let result4En = new ResultContent(
     '/img/r4.png',
     '/img/bg4.png',
     'Да! А вот тут я не придумала&nbspпанчлайн',
-    '/img/i4.png',
+    '/img/i4en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be a web-developer and you'll create a lot of great websites"
 )
@@ -338,7 +338,7 @@ let result5En = new ResultContent(
     '/img/r5.png',
     '/img/bg5.png',
     "Yes! Let's see if you've got any secrets...",
-    '/img/i5.png',
+    '/img/i5en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be one of these specialists: cryptoanalyst, hacker or system administrator"
 )
@@ -350,7 +350,7 @@ let result1pEn = new ResultContent(
     '/img/r1.png',
     '/img/bg1.png',
     'Sure, just let him saddle up his dragon!',
-    '/img/i1.png',
+    '/img/i1en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be one of these specialists: 3D-modeller, graphic designer or game designer"
 )
@@ -362,7 +362,7 @@ let result2pEn = new ResultContent(
     '/img/r2.png',
     '/img/bg2.png',
     'Yes, just let him turn on his camera',
-    '/img/i2.png',
+    '/img/i2en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be one of these specialists: animation artist, director or music video director."
 )
@@ -373,7 +373,7 @@ let result3pEn = new ResultContent(
     '/img/r3.png',
     '/img/bg3.png',
     "Yes! He hasn't been able to learn to communicate with the cat, maybe he'll be able to talk to a robotic cat at least",
-    '/img/i3.png',
+    '/img/i3en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be a software or game developer"
 )
@@ -384,7 +384,7 @@ let result4pEn = new ResultContent(
     '/img/r4.png',
     '/img/bg4.png',
     'Да! А вот тут я не придумала&nbspпанчлайн',
-    '/img/i4.png',
+    '/img/i4en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be a web-developer and he'll create a lot of great websites"
 )
@@ -395,7 +395,7 @@ let result5pEn = new ResultContent(
     '/img/r5.png',
     '/img/bg5.png',
     "Yes! Let him see if you've got any secrets...",
-    '/img/i5.png',
+    '/img/i5en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be one of these specialists: cryptoanalyst, hacker or system administrator"
 )
