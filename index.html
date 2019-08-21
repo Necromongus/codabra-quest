@@ -31,7 +31,7 @@
             </div>
             <div class="btns main" style="display: none;">
                 <div id="btn1" class="btn" onclick="screen12.changeContent();"><div id="ans1" class="btn_text">Мне даже 10 лет ещё нет! О каких<br> документах ты говоришь?!</div></div>
-                <div id="btn2" class="btn" onclick="screen22.changeContent();"><div id="ans2" class="btn_text">Я старше 10, но паспорта у меня пока нет,<br> страничка ВК подойдет?</div> </div>
+                <div id="btn2" class="btn" onclick="screen22.changeContent();"><div id="ans2" class="btn_text">Я старше 10, но паспорта у меня пока нет,<br> страничка ВК подойдёт?</div> </div>
                 <div id="btn3" class="btn" onclick="screen32.changeContent();"><div id="ans3" class="btn_text">Ты же робот! Поищи моё лицо по базам,<br> а заодно узнаешь, что мне уже есть 14</div> </div>
                 <div id="btn4" class="btn" onclick="screen42.changeContent();"><div id="ans4" class="btn_text">Здравствуйте, а день открытых дверей для родителей здесь проходит?</div></div>
             </div>
@@ -58,11 +58,11 @@
                     <div class="share-text">Поделись результатом с друзьями</div>
                     <div class="share-btns">
                         <a class="share-wrapper" target="_blank" onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https%3A%2F%2Fnecromongus.github.io%2F&display=popup&ref=plugin&src=share_button','title','width=500,height=500')">
-                            <img class="share-icon" src="/img/facebook.png"></a>
+                            <img id="fb-share" class="share-icon" src="/img/facebook.png"></a>
 
                         <a class="share-wrapper" class="twitter-share-button" target="_blank"
                         href="https://twitter.com/intent/tweet?text=Hello%20world">
-                        <img class="share-icon" src="/img/twitter.png" alt="twitter-share"></a>
+                        <img id = "tw-share" class="share-icon" src="/img/twitter.png" alt="twitter-share"></a>
 
                         <script type="text/javascript">
                             document.write(VK.Share.button({
@@ -71,7 +71,7 @@
                               image: 'https://necromongus.github.io/img/0q.png',
                               noparse: true, 
                             },
-                            {type: 'custom', text: '<img class="share-icon" src="/img/vk.png" />'}
+                            {type: 'custom', text: '<div class="share-wrapper"><img id="vk-share" class="share-icon" src="/img/vk.png" /></div>'}
                             ));
                         </script>
 
