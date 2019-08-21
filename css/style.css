@@ -49,6 +49,10 @@ body {
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main {
@@ -65,6 +69,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bottom-style {
+  display: none;
 }
 
 .inv {
@@ -503,10 +511,11 @@ main {
     right: -7.4vh;
   }
   #ending-btn_text {
+    width: 85%;
     margin: auto;
     font-family: Geometria Bold;
     font-size: 2.2vh;
-    line-height: 2.2vh;
+    line-height: 2.5vh;
     text-align: center;
     text-decoration: none;
   }
@@ -648,6 +657,10 @@ main {
     display: flex;
     position: relative;
     cursor: pointer;
+    outline-width: 0;
+  }
+  #start-btn:focus {
+    outline: 0;
   }
   #start-btn::after {
     background-image: url("/img/Button-pixels.png");
@@ -668,6 +681,10 @@ main {
     line-height: 3vh;
     color: #06001F;
     text-align: center;
+    outline-width: 0;
+  }
+  .start-btn_text:focus {
+    outline: 0;
   }
   #ru-lang {
     display: inline-block;
@@ -687,7 +704,7 @@ main {
     margin-bottom: 2vh;
   }
   #question {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     font-family: Geometria Bold;
     font-size: 4vw;
@@ -742,6 +759,7 @@ main {
             box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);
   }
   .btn_text {
+    width: 95%;
     margin: auto;
     font-family: Geometria Regular;
     font-size: 3.2vw;
@@ -866,7 +884,7 @@ main {
     font-size: 3.6vw;
     line-height: 4.6vw;
     color: #FFFFFF;
-    margin-top: 4vh;
+    margin-top: 5vh;
   }
   #ending-form-result_image {
     position: absolute;
@@ -956,9 +974,10 @@ main {
   }
   #ending-btn_text {
     margin: auto;
+    width: 80%;
     font-family: Geometria Bold;
     font-size: 1.5vh;
-    line-height: 1.5vh;
+    line-height: 1.8vh;
     color: #06001F;
     text-align: center;
   }

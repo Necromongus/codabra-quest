@@ -62,6 +62,9 @@
         display: flex
         position: relative
         cursor: pointer
+        outline-width: 0
+        &:focus
+            outline: 0
         &::after   
             background-image: url("/img/Button-pixels.png")
             background-repeat: no-repeat
@@ -74,6 +77,7 @@
             top: -5.0vh
             right: -7.4vw
 
+
     .start-btn_text
         margin: auto
         font-family: Geometria Bold
@@ -81,6 +85,10 @@
         line-height: 3vh
         color: #06001F    
         text-align: center  
+        outline-width: 0
+        &:focus
+            outline: 0
+
 
     #ru-lang
         display: inline-block
@@ -99,7 +107,7 @@
         margin-bottom: 2vh
 
     #question 
-        width: 90%
+        width: 95%
         margin: 0 auto
         font-family: Geometria Bold
         font-size: 4vw
@@ -134,9 +142,9 @@
         border: 3px solid #8FF0FF
         box-sizing: border-box
         border-radius: 12px
-        
         box-shadow: 0 0 15px rgba(#0042ED,0.86)
         &_text
+            width: 95%
             margin: auto
             font-family: Geometria Regular
             font-size: 3.2vw
@@ -239,7 +247,7 @@
             font-size: 3.6vw
             line-height: 4.6vw
             color: #FFFFFF
-            margin-top: 4vh
+            margin-top: 5vh
 
         &_image
             position: absolute
@@ -314,9 +322,10 @@
 
         &_text
             margin: auto
+            width: 80%
             font-family: Geometria Bold
             font-size: 1.5vh
-            line-height: 1.5vh
+            line-height: 1.8vh
             color: #06001F    
             text-align: center      
 

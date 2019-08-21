@@ -6,6 +6,33 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+
+btn1.addEventListener('touchstart', ClickGlow1);
+btn2.addEventListener('touchstart', ClickGlow2);
+btn3.addEventListener('touchstart', ClickGlow3);
+btn4.addEventListener('touchstart', ClickGlow4);
+
+async function ClickGlow1(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(1000);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn1 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow2(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(1000);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn2 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow3(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(1000);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn3 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+async function ClickGlow4(){
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #FFDD9B; -webkit-box-shadow: 0 0 15px rgba(193, 128, 0, 0.86); box-shadow: 0 0 15px rgba(193, 128, 0, 0.86);}}</style>";
+    await sleep(1000);
+    document.querySelector('.bottom-style').innerHTML = "<style>@media (orientation:portrait) {.btn4 {border: 3px solid #8FF0FF; -webkit-box-shadow: 0 0 15px rgba(0, 66, 237, 0.86); box-shadow: 0 0 15px rgba(0, 66, 237, 0.86);}</style>";
+}
+
 async function StartQuest() {
     for (const startElement of startElements){
         startElement.style.opacity = '0';
@@ -36,7 +63,7 @@ async function StartQuestEn() {
     document.getElementById('btn1').setAttribute('onclick', 'screen12En.changeContent();');
     document.getElementById('ans2').innerHTML = "I'm older than 10, but I don't have an ID yet. But I can show you my Facebook profile!";
     document.getElementById('btn2').setAttribute('onclick', 'screen22En.changeContent();');
-    document.getElementById('ans3').innerHTML = "Come on, you're a robot! Check out my face in your databases and you'll see that I'm already 14 and I'm still at school."
+    document.getElementById('ans3').innerHTML = "Come on, you're a robot! Check out my face in your databases and you'll see that I'm already 14."
     document.getElementById('btn3').setAttribute('onclick', 'screen32En.changeContent();');
     document.getElementById('ans4').innerHTML = " Hello, is the Open Day for parents taking place here?"
     document.getElementById('btn4').setAttribute('onclick', 'screen42En.changeContent();');
@@ -174,7 +201,7 @@ class ResultContent {
 
 let result1 = new ResultContent(
     'Ты — творец виртуальных миров',
-    'Твоё воображение безгранично! Если бы судьба мира была в твоих руках, он был бы наполнен роботами-волшебниками и летающими рыбами',
+    'Твоё воображение безгранично! Если бы судьба мира была в твоих руках, он был бы наполнен роботами-волшебниками и&nbspлетающими рыбами',
     '/img/r1.png',
     '/img/bg1.png',
     'Да! Только сначала запрягу своего&nbspдракона!',
@@ -186,7 +213,7 @@ let result1 = new ResultContent(
 
 let result2 = new ResultContent(
     'Ты — повелитель живых картин',
-    'Ты легко создашь крутейший видеоблог или фильм — настоящие&nbspпрофессионалы уже хотят с тобой сотрудничать!',
+    '<br>Ты легко создашь крутейший видеоблог или&nbspфильм — настоящие профессионалы уже хотят с&nbspтобой сотрудничать!',
     '/img/r2.png',
     '/img/bg2.png',
     'Да! Подождите, только камеру включу',
@@ -197,18 +224,18 @@ let result2 = new ResultContent(
 
 let result3 = new ResultContent(
     'Ты — хранитель таинственных языков',
-    'Благодаря железной логике ты сможешь подчинить себе любого робота. Стоит тебе выучить хотя бы один их язык — и они завоюют для тебя мир',
+    'Благодаря железной логике ты сможешь подчинить любого робота. Стоит тебе выучить хотя бы&nbspодин их язык — и&nbspони завоюют для тебя мир',
     '/img/r3.png',
     '/img/bg3.png',
     'Да! Давно пора научиться общаться&nbspс&nbspхолодильником',
     '/img/i3.png',
     "Ну что, готов(а) учиться в нашей школе?",
-    "В будущем ты станешь разработчиком программного обеспечения или создателем игр"
+    "В будущем ты станешь создателем игр или разработчиком программного обеспечения"
 )
 
 let result4 = new ResultContent(
     'Ты — повелитель веб-страниц',
-    'Довольствоваться малым – совсем не про тебя! Реализовать твои амбиции лучше всего поможет великий интернет. Там ты реализуешь всё, что задумаешь',
+    'Довольствоваться малым –не про тебя! Твои амбиции поможет реализовать великий интернет. Там&nbspты&nbspсоздашь всё, что задумаешь',
     '/img/r4.png',
     '/img/bg4.png',
     'Да! Надо только найти подходящие&nbspботинки...&nbspв&nbspинтернете',
@@ -230,7 +257,7 @@ let result5 = new ResultContent(
 
 let result1p = new ResultContent(
     'Ваш ребёнок — творец виртуальных миров',
-    'Его воображение безгранично! Если бы судьба мира была в его руках, он был бы наполнен роботами-волшебниками и летающими рыбами',
+    'Его воображение безгранично! Если бы судьба мира была в его руках, он был бы наполнен роботами-волшебниками и&nbspлетающими рыбами',
     '/img/r1.png',
     '/img/bg1.png',
     'Да! Только сначала запряжет своего&nbspдракона',
@@ -242,7 +269,7 @@ let result1p = new ResultContent(
 
 let result2p = new ResultContent(
     'Ваш ребёнок — повелитель живых картин',
-    'Он легко создаст крутейший видеоблог или фильм — настоящие&nbspпрофессионалы уже хотят с ним сотрудничать!',
+    'Он легко создаст крутейший видеоблог или&nbspфильм — настоящие&nbspпрофессионалы уже хотят сотрудничать!',
     '/img/r2.png',
     '/img/bg2.png',
     'Да! Подождите, только камеру включит',
@@ -252,22 +279,22 @@ let result2p = new ResultContent(
 )
 
 let result3p = new ResultContent(
-    'Ваш ребёнок — хранитель таинственных языков',
-    'Благодаря железной логике он сможет подчинить себе любого робота. Стоит ему выучить хотя бы один их язык — и они завоюют для него мир',
+    'Ваш&nbspребёнок&nbsp—&nbspхранитель таинственных&nbspязыков',
+    'Благодаря железной логике он сможет подчинить себе любого робота. Ему достаточно выучить хотя бы один их язык — и он завоюет мир',
     '/img/r3.png',
     '/img/bg3.png',
-    'Да! С котом он общаться не научился, научится хотя бы с роботом-котом',
+    'Да! Давно пора научиться общаться с&nbspхолодильником',
     '/img/i3.png',
     "Ну что, он готов учиться в нашей школе?",
-    "В будущем он станет разработчиком программного обеспечения или создателем игр"
+    "В будущем он станет создателем игр или разработчиком программного обеспечения "
 )
 
 let result4p = new ResultContent(
     'Ваш ребёнок — повелитель веб-страниц',
-    'Довольствоваться малым – совсем не про него! Реализовать его амбиции лучше всего поможет великий интернет. Там он реализует всё, что задумает',
+    'Довольствоваться малым –не про него! Его амбиции поможет реализовать великий интернет. Там&nbspон&nbspсоздаст всё, что задумает',
     '/img/r4.png',
     '/img/bg4.png',
-    'Да! А вот тут я не придумала&nbspпанчлайн',
+    'Да! Надо только найти подходящие&nbspботинки...&nbspв&nbspинтернете',
     '/img/i4.png',
     "Ну что, он готов учиться в нашей школе?",
     "В будущем он станет веб-разработчиком и создаст много хороших сайтов"
@@ -299,7 +326,7 @@ let result1En = new ResultContent(
 
 let result2En = new ResultContent(
     'You are the Master of Living Pictures',
-    'You can easily create an awesome video blog or film – real professionals are already looking forward to collaborating with you!',
+    'You can easily create an awesome video blog or film&nbsp– professionals are already looking forward to&nbspcollaborating with you!',
     '/img/r2.png',
     '/img/bg2.png',
     'Yes, just let me turn on my camera',
@@ -310,10 +337,10 @@ let result2En = new ResultContent(
 
 let result3En = new ResultContent(
     'You are the Keeper of Mysterious Languages.',
-    `Thanks to your flawless logical reasoning you're able to bring any robot under control. And in case you learn at least one language of theirs – they'll conquer the world for you`,
+    `Thanks to your logic you're able to bring any robot under control. And in case you learn at least one language of theirs – they'll conquer the world for you`,
     '/img/r3.png',
     '/img/bg3.png',
-    `Yes! I haven't been able to learn to communicate with my cat, maybe I'll be able to talk to a robotic cat at least`,
+    `Yes! It's time to learn how to talk with&nbspthe&nbspfridge`,
     '/img/i3en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be a software or game developer"
@@ -325,7 +352,7 @@ let result4En = new ResultContent(
     'Settling for less is not your style! The Internet will help you to achieve your ambitions. There you can bring all your ideas to life',
     '/img/r4.png',
     '/img/bg4.png',
-    'Да! А вот тут я не придумала&nbspпанчлайн',
+    'Yes! I just need to find the right shoes... on&nbspthe Internet',
     '/img/i4en.png',
     "So, are you ready to join our school?",
     "In the future you're going to be a web-developer and you'll create a lot of great websites"
@@ -333,7 +360,7 @@ let result4En = new ResultContent(
 
 let result5En = new ResultContent(
     'You are the Master of Dark Secrets',
-    'Any detective would be jealous of your attentiveness! No mystery in this Universe can get past your eyes',
+    'Any detective would be jealous of your attentiveness! No mystery in this Universe can get past&nbspyour eyes',
     '/img/r5.png',
     '/img/bg5.png',
     "Yes! Let's see if you've got any secrets...",
@@ -354,10 +381,9 @@ let result1pEn = new ResultContent(
     "In the future he's going to be one of these specialists: 3D-modeller, graphic designer or game designer"
 )
 
-
 let result2pEn = new ResultContent(
     'Your child is the Master of Living Pictures',
-    'He can easily create an awesome video blog or film – real professionals are already looking forward to collaborating with him!',
+    'He can easily create an awesome video blog or film&nbsp– professionals are already looking forward to&nbspcollaborating with him',
     '/img/r2.png',
     '/img/bg2.png',
     'Yes, just let him turn on his camera',
@@ -368,10 +394,10 @@ let result2pEn = new ResultContent(
 
 let result3pEn = new ResultContent(
     'Your child is the Keeper of Mysterious Languages',
-    "Thanks to his flawless logical reasoning he's able to bring any robot under control. And in case he learn at least one language of theirs – they'll conquer the world for your him",
+    "Thanks to his logic he is able to bring any robot under control. And in case he learn at least one language of theirs – they'll conquer the world for him",
     '/img/r3.png',
     '/img/bg3.png',
-    "Yes! He hasn't been able to learn to communicate with the cat, maybe he'll be able to talk to a robotic cat at least",
+    "Yes! It's time for him to learn how to talk with&nbspthe&nbspfridge",
     '/img/i3en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be a software or game developer"
@@ -382,7 +408,7 @@ let result4pEn = new ResultContent(
     'Settling for less is not his style! The Internet will help him to achieve his ambitions. There he can bring all his ideas to life',
     '/img/r4.png',
     '/img/bg4.png',
-    'Да! А вот тут я не придумала&nbspпанчлайн',
+    'Yes! I just need to find the right shoes for&nbsphim... on&nbspthe Internet',
     '/img/i4en.png',
     "So,  is he ready to join our school?",
     "In the future he's going to be a web-developer and he'll create a lot of great websites"
@@ -398,6 +424,8 @@ let result5pEn = new ResultContent(
     "So,  is he ready to join our school?",
     "In the future he's going to be one of these specialists: cryptoanalyst, hacker or system administrator"
 )
+
+
 
 class MainContent {
     constructor(questionText, img, ans1, ans1c, ans2, ans2c, ans3, ans3c, ans4, ans4c, nextStep){
@@ -749,7 +777,7 @@ let screen14 = new MainContent(
     "/img/4q.jpg",
     "Я могу выбирать? Тогда давайте самое простое и&nbspвесёлое!", "screen12.B();",
     "Любое, только подождите, камеру включу,<br> чтоб влог записать", "screen12.A();",
-    "Ну испытание в школе вряд ли будет опасным, так что давайте любое", "screen12.B();",
+    "Ну испытание в школе вряд ли будет опасным, так&nbspчто давайте любое", "screen12.B();",
     "Давайте всё, что угодно! Кроме математики...", "screen12.A();",
     "screen14.calculateDirection1();"
 )
@@ -759,13 +787,13 @@ let screen15a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen16a.changeContent();"
 )
 
 let screen16a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное", "screen12.RA();",
     "Что-то становится слишком похоже на&nbspфильм ужасов...", "screen12.RB();",
@@ -805,7 +833,7 @@ let screen15b = new MainContent(
 )
 
 let screen16b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RB();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RC();",
@@ -871,13 +899,13 @@ let screen25a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen26a.changeContent();"
 )
 
 let screen26a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное. Нет, лучше из научной фантастики", "screen12.RA();",
     "Что-то становится слишком похоже на фильм ужасов...", "screen12.RB();",
@@ -917,7 +945,7 @@ let screen25b = new MainContent(
 )
 
 let screen26b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RB();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RC();",
@@ -993,13 +1021,13 @@ let screen35a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробую найти логику. Вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Сниму на камеру и разошлю всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл(а)…", "screen12.RA();",
+    "Кажется, что-то похожее было в одной из миллиона игр, в&nbspкоторые я играл…", "screen12.RA();",
     "Ого, шифры! Прям как в кино с искателями сокровищ!", "screen12.RB();",
     "screen36a.changeContent();"
 )
 
 let screen36a = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Надеюсь, это что-то сказочное. Нет, лучше из научной фантастики", "screen12.RA();",
     "Что-то становится слишком похоже на фильм ужасов...", "screen12.RB();",
@@ -1039,7 +1067,7 @@ let screen35b = new MainContent(
 )
 
 let screen36b = new MainContent(
-    "Расшифрованное послание получилось таким: отправляйся в самый дальний коридор и познакомься с удивительными существами. Что&nbspдумаешь?", 
+    "Расшифрованное послание получилось таким: «Отправляйся в дальний коридор и&nbspпознакомься с удивительными существами» Что&nbspдумаешь?", 
     "/img/6q.jpg",
     "Да просто пойду и посмотрю, это точно не будет опасно", "screen12.RA();",
     "Надо подробнее изучить сайт этой школы. Там, наверное, и про этих существ написано", "screen12.RB();",
@@ -1071,7 +1099,7 @@ let screen38b = new MainContent(
 // РОДИТЕЛИ
 
 let screen42 = new MainContent(
-    "Что ж, тогда давайте посмотрим, как хорошо Вы знаете своего ребёнка. Ему сказали, что нужно подняться на 118 этаж. Что он/она будет делать?", 
+    "Что ж, тогда давайте посмотрим, как хорошо Вы знаете своего ребёнка. Ему сказали, что нужно подняться на 118 этаж. Что он будет делать?", 
     "/img/2q.jpg",
     "Найдёт лестницу, это отличный повод размяться!", "screen12.B();",
     "Вызовет личного дракона, конечно", "screen12.A();",
@@ -1081,7 +1109,7 @@ let screen42 = new MainContent(
 )
 
 let screen43 = new MainContent(
-    "Ваш ребёнок поднимается и попадает в большой зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что он/она будет с ней делать?", 
+    "Ваш ребёнок поднимается и попадает в большой зал, но здесь никого и только маленькая чёрная коробка посреди зала. Что он будет с ней делать?", 
     "/img/3q.jpg",
     "Поищет в интернете, что это может быть", "screen12.B();",
     "Чёрная коробка? Украсит её фломастерами и блёстками, конечно же", "screen12.A();",
@@ -1105,7 +1133,7 @@ let screen45a = new MainContent(
     "/img/5q.jpg",
     "Ну… попробует найти логику. Например, что вот этот значок похож на&nbspсмешную рожицу", "screen12.RA();",
     "Снимет на камеру и разошлет всем друзьям — <br>пусть помогают", "screen12.RB();",
-    "Что-то похожее наверняка было в одной из миллиона игр, в&nbspкоторые он/она играл(а)…", "screen12.RA();",
+    "Что-то похожее наверняка было в одной из миллиона игр, в&nbspкоторые он играл…", "screen12.RA();",
     "Будет в восторге, это же шифры! Прям как в кино с искателями сокровищ", "screen12.RB();",
     "screen46a.changeContent();"
 )
@@ -1124,7 +1152,7 @@ let screen47a = new MainContent(
     "В дальнем коридоре Вашего ребёнка встречают… инопланетяне! Кажется, они вполне мирные, как&nbspон&nbspбудет себя вести?", 
     "/img/7q.jpg",
     "Сразу станет фоткать! Иначе ему же никто не поверит", "screen12.RB();",
-    "начнёт расспрашивать их про планету, с&nbspкоторой они&nbspприлетели", "screen12.RA();",
+    "Начнёт расспрашивать их про планету, с&nbspкоторой они&nbspприлетели", "screen12.RA();",
     "Мирные? Он смотрел все фильмы про инопланетян<br>и&nbspвсё-таки будет поосторожнее", "screen12.RB();",
     "Они же совсем не похожи на людей! Так что постарается влиться в коллектив и поближе их рассмотреть", "screen12.RA();",
     "screen48a.changeContent();"
@@ -1133,10 +1161,10 @@ let screen47a = new MainContent(
 let screen48a = new MainContent(
     "После недолгого общения новые знакомые приглашают Вашего ребёнка в гости на свою планету. Что&nbspон&nbspответит?", 
     "/img/8q.jpg",
-    '"Сначала найду всю-всю информацию о них и их планете, а&nbspпотом уже дам ответ"', "",
-    '"Да! Поскорей бы выложить фотки с другой планеты..."', "",
-    '"Слишком подозрительное предложение. Мы же едва знакомы!"', "",
-    '"Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей"', "",
+    '«Сначала найду всю-всю информацию о них и их планете, а&nbspпотом уже дам ответ»', "",
+    '«Да! Поскорей бы выложить фотки с другой планеты...»', "",
+    '«Слишком подозрительное предложение. Мы же едва знакомы!»', "",
+    '«Хорошо, но сначала мне нужно собрать все свои вещи и&nbspобязательно захватить пару друзей»', "",
     "screen48a.calculateDirection4a();"
 )
 
@@ -1205,11 +1233,11 @@ let screen12En = new MainContent(
 )
 
 let screen13En = new MainContent(
-    "You get upstairs and find yourself in a large spacious room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
+    "You get upstairs and find yourself in a large room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
     "/img/3q.jpg",
     "I'll search the Internet to find out what it is.", "screen12.B();",
     "A black box? Of course I'll decorate it with markers and glitter", "screen12.A();",
-    "I'll take a pic and send it to my friends so they could help.", "screen12.A();",
+    "I'll take a pic and send it to my friends so&nbspthey could help.", "screen12.A();",
     "I'll kick it and see what happens!", "screen12.B();",
     "screen14En.changeContent();"
 )
@@ -1217,19 +1245,19 @@ let screen13En = new MainContent(
 let screen14En = new MainContent(
     "Suddenly you hear a voice from the box: «So, young student, what test are you ready to take to get into our school?»", 
     "/img/4q.jpg",
-    "Oh, so I can choose? I'd like the one that's most fun and easy!", "screen12.B();",
-    "Any, just give me a moment so I could turn on my camera to record my vlog. ", "screen12.A();",
-    "A test at school probably isn't going to be tough, so I'm OK with any", "screen12.B();",
+    "Oh, so&nbspI can choose? I'd like the one that's most fun and easy!", "screen12.B();",
+    "Any, just give me a moment so&nbspI could turn on my&nbspcamera to record my vlog", "screen12.A();",
+    "A test at school probably isn't going to be tough, so&nbspI'm OK with any", "screen12.B();",
     " Any will do! Except for maths...", "screen12.A();",
     "screen14En.calculateDirection1En();"
 )
 
 let screen15aEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
-    "Well... I'll try to find some patterns. This sign here looks like a funny face.", "screen12.RA();",
-    "I'll take a photo and send it to all my friends so that they can help.", "screen12.RB();",
-    "I think I've seen something similar in one of the computer games I've played...", "screen12.RA();",
+    "Well... I'll try to find some patterns. This sign here looks like a funny face", "screen12.RA();",
+    "I'll take a pic and send it to my friends for help", "screen12.RB();",
+    "I think I've seen something similar in one of the&nbspcomputer games I've played...", "screen12.RA();",
     "Wow, an ecnryption! Just like in the treasure hunt movies!", "screen12.RB();",
     "screen16aEn.changeContent();"
 )
@@ -1237,7 +1265,7 @@ let screen15aEn = new MainContent(
 let screen16aEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
-    "I hope it's something from a fairy tale. Or, even better, from sci-fi.", "screen12.RA();",
+    "I hope it's something from a fairy tale", "screen12.RA();",
     "It's starting to feel like some kind of a horror movie...", "screen12.RB();",
     "I wonder if they're real. Let's see!", "screen12.RA();",
     "Wow, fantastic creatures, really? This needs to go on YouTube! ", "screen12.RB();",
@@ -1245,12 +1273,12 @@ let screen16aEn = new MainContent(
 )
 
 let screen17aEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
-    "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
+    "I must take a picture immeadiately or nobody is&nbspgoing to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
-    "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Peaceful, huh? I remember all the films about aliens, so&nbspI'll be careful", "screen12.RB();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen18aEn.changeContent();"
 )
 
@@ -1258,19 +1286,19 @@ let screen18aEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "",
-    "Oh yes! I really want to post the photos from the other planet!", "",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "",
     "Sounds suspicious. We've only just met!", "",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "",
     "screen18aEn.calculateDirection1aEn();"
 )
 
 let screen15bEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
     "I'll just decipher it!", "screen12.RA();",
     "Well... I'll try to find some patterns. This sign here looks like a funny face", "screen12.RB();",
     "It's just a program, it can be hacked", "screen12.RA();",
-    "You can find everything on the Internet! Well, at least something similar...", "screen12.RC();",
+    "You can find everything on the Internet! Well,&nbspat&nbspleast something similar...", "screen12.RC();",
     "screen16bEn.changeContent();"
 )
 
@@ -1278,19 +1306,19 @@ let screen16bEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
     "I'll just go and see, it isn't probably going to be dangerous", "screen12.RB();",
-    "I need to read the website of this school more carefully. They must have something about these creatures there", "screen12.RC();",
+    "I need to check the website of this school. They must have something about these creatures there", "screen12.RC();",
     "I'll hack the survelliance cameras and see what they have there", "screen12.RA();",
-    "Usually the scary stuff is kept in far corridors. I'd better find something for protection", "screen12.RB();",
+    "Usually the scary stuff is kept in far corridors. I'd&nbspbetter find something for protection", "screen12.RB();",
     "screen17bEn.changeContent();"
 )
 
 let screen17bEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
     "Well, first I'll say 'Hi' and just see what happens", "screen12.RB();",
-    "I'll try to establish contact, obviously. Hey, guys, are you on Facebook?", "screen12.RC();",
-    "I should try to find out who they are and what their business is without getting them suspicious", "screen12.RA();",
-    "I'll check if I can be an inter-plantery exchange student on the website!", "screen12.RC();",
+    "I'll try to establish contact, obviously. Hey, guys, what games do you like to play?", "screen12.RC();",
+    "I should try to find out who they are and what their business is, without getting them suspicious", "screen12.RA();",
+    "If they came to Earth then maybe I can go to their planet!", "screen12.RC();",
     "screen18bEn.changeContent();"
 )
 
@@ -1298,9 +1326,9 @@ let screen18bEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "screen12.RA();",
-    "Oh yes! I really want to post the photos from the other planet!", "screen12.RC();",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "screen12.RC();",
     "Sounds suspicious. We've only just met!", "screen12.RB();",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "screen12.RB();",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "screen12.RB();",
     "screen18bEn.calculateDirection1bEn();"
 )
 
@@ -1317,11 +1345,11 @@ let screen22En = new MainContent(
 )
 
 let screen23En = new MainContent(
-    "You get upstairs and find yourself in a large spacious room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
+    "You get upstairs and find yourself in a large room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
     "/img/3q.jpg",
     "I'll search the Internet to find out what it is.", "screen12.B();",
     "A black box? Of course I'll decorate it with markers and glitter", "screen12.A();",
-    "I'll take a pic and send it to my friends so they could help.", "screen12.A();",
+    "I'll take a pic and send it to my friends so&nbspthey could help.", "screen12.A();",
     "I'll kick it and see what happens!", "screen12.B();",
     "screen24En.changeContent();"
 )
@@ -1329,19 +1357,19 @@ let screen23En = new MainContent(
 let screen24En = new MainContent(
     "Suddenly you hear a voice from the box: «So, young student, what test are you ready to take to get into our school?»", 
     "/img/4q.jpg",
-    "Oh, so I can choose? I'd like the one that's most fun and easy!", "screen12.B();",
-    "Any, just give me a moment so I could turn on my camera to record my vlog. ", "screen12.A();",
-    "A test at school probably isn't going to be tough, so I'm OK with any", "screen12.B();",
+    "Oh, so&nbspI can choose? I'd like the one that's most fun and easy!", "screen12.B();",
+    "Any, just give me a moment so&nbspI could turn on my&nbspcamera to record my vlog", "screen12.A();",
+    "A test at school probably isn't going to be tough, so&nbspI'm OK with any", "screen12.B();",
     " Any will do! Except for maths...", "screen12.A();",
     "screen24En.calculateDirection2En();" //!
 )
 
 let screen25aEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
     "Well... I'll try to find some patterns. This sign here looks like a funny face.", "screen12.RA();",
-    "I'll take a photo and send it to all my friends so that they can help.", "screen12.RB();",
-    "I think I've seen something similar in one of the computer games I've played...", "screen12.RA();",
+    "I'll take a photo and send it to all my friends so&nbspthat they can help.", "screen12.RB();",
+    "I think I've seen something similar in one of the&nbspcomputer games I've played...", "screen12.RA();",
     "Wow, an ecnryption! Just like in the treasure hunt movies!", "screen12.RB();",
     "screen26aEn.changeContent();"
 )
@@ -1349,7 +1377,7 @@ let screen25aEn = new MainContent(
 let screen26aEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
-    "I hope it's something from a fairy tale. Or, even better, from sci-fi.", "screen12.RA();",
+    "I hope it's something from a fairy tale. Or, even better, from sci-fi", "screen12.RA();",
     "It's starting to feel like some kind of a horror movie...", "screen12.RB();",
     "I wonder if they're real. Let's see!", "screen12.RA();",
     "Wow, fantastic creatures, really? This needs to go on YouTube! ", "screen12.RB();",
@@ -1357,12 +1385,12 @@ let screen26aEn = new MainContent(
 )
 
 let screen27aEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
-    "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
+    "I must take a picture immeadiately or nobody is&nbspgoing to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
-    "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Peaceful, huh? I remember all the films about aliens, so&nbspI'll be careful", "screen12.RB();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen28aEn.changeContent();"
 )
 
@@ -1370,19 +1398,19 @@ let screen28aEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "",
-    "Oh yes! I really want to post the photos from the other planet!", "",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "",
     "Sounds suspicious. We've only just met!", "",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "",
     "screen28aEn.calculateDirection1aEn();"
 )
 
 let screen25bEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
     "I'll just decipher it!", "screen12.RA();",
     "Well... I'll try to find some patterns. This sign here looks like a funny face", "screen12.RB();",
     "It's just a program, it can be hacked", "screen12.RA();",
-    "You can find everything on the Internet! Well, at least something similar...", "screen12.RC();",
+    "You can find everything on the Internet! Well,&nbspat&nbspleast something similar...", "screen12.RC();",
     "screen26bEn.changeContent();"
 )
 
@@ -1390,18 +1418,18 @@ let screen26bEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
     "I'll just go and see, it isn't probably going to be dangerous", "screen12.RB();",
-    "I need to read the website of this school more carefully. They must have something about these creatures there", "screen12.RC();",
+    "I need to check the website of this school. They must have something about these creatures there", "screen12.RC();",
     "I'll hack the survelliance cameras and see what they have there", "screen12.RA();",
-    "Usually the scary stuff is kept in far corridors. I'd better find something for protection", "screen12.RB();",
+    "Usually the scary stuff is kept in far corridors. I'd&nbspbetter find something for protection", "screen12.RB();",
     "screen27bEn.changeContent();"
 )
 
 let screen27bEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
     "Well, first I'll say 'Hi' and just see what happens", "screen12.RB();",
     "I'll try to establish contact, obviously. Hey, guys, are you on Facebook?", "screen12.RC();",
-    "I should try to find out who they are and what their business is without getting them suspicious", "screen12.RA();",
+    "I should try to find out who they are and what their business is, without getting them suspicious", "screen12.RA();",
     "I'll check if I can be an inter-plantery exchange student on the website!", "screen12.RC();",
     "screen28bEn.calculateDirection27bEn();"
 )
@@ -1410,9 +1438,9 @@ let screen28bZEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "",
-    "Oh yes! I really want to post the photos from the other planet!", "",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "",
     "Sounds suspicious. We've only just met!", "",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "",
     "screen28bEn.calculateDirection2bEn();"
 )
 
@@ -1420,9 +1448,9 @@ let screen28bEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "screen12.RA();",
-    "Oh yes! I really want to post the photos from the other planet!", "screen12.RC();",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "screen12.RC();",
     "Sounds suspicious. We've only just met!", "screen12.RB();",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "screen12.RB();",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "screen12.RB();",
     "screen28bEn.calculateDirection2bEn();"
 )
 
@@ -1439,11 +1467,11 @@ let screen32En = new MainContent(
 )
 
 let screen33En = new MainContent(
-    "You get upstairs and find yourself in a large spacious room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
+    "You get upstairs and find yourself in a large room, but there's nobody there except for a small black box right in the middle of the room. What are you going to do with it?", 
     "/img/3q.jpg",
     "I'll search the Internet to find out what it is.", "screen12.B();",
     "A black box? Of course I'll decorate it with markers and glitter", "screen12.A();",
-    "I'll take a pic and send it to my friends so they could help.", "screen12.A();",
+    "I'll take a pic and send it to my friends so&nbspthey could help.", "screen12.A();",
     "I'll kick it and see what happens!", "screen12.B();",
     "screen34En.changeContent();"
 )
@@ -1451,19 +1479,19 @@ let screen33En = new MainContent(
 let screen34En = new MainContent(
     "Suddenly you hear a voice from the box: «So, young student, what test are you ready to take to get into our school?»", 
     "/img/4q.jpg",
-    "Oh, so I can choose? I'd like the one that's most fun and easy!", "screen12.B();",
-    "Any, just give me a moment so I could turn on my camera to record my vlog. ", "screen12.A();",
-    "A test at school probably isn't going to be tough, so I'm OK with any", "screen12.B();",
+    "Oh, so&nbspI can choose? I'd like the one that's most fun and easy!", "screen12.B();",
+    "Any, just give me a moment so&nbspI could turn on my&nbspcamera to record my vlog", "screen12.A();",
+    "A test at school probably isn't going to be tough, so&nbspI'm OK with any", "screen12.B();",
     " Any will do! Except for maths...", "screen12.A();",
     "screen34En.calculateDirection3En();" //!
 )
 
 let screen35aEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
     "Well... I'll try to find some patterns. This sign here looks like a funny face.", "screen12.RA();",
-    "I'll take a photo and send it to all my friends so that they can help.", "screen12.RB();",
-    "I think I've seen something similar in one of the computer games I've played...", "screen12.RA();",
+    "I'll take a photo and send it to all my friends so&nbspthat they can help.", "screen12.RB();",
+    "I think I've seen something similar in one of the&nbspcomputer games I've played...", "screen12.RA();",
     "Wow, an ecnryption! Just like in the treasure hunt movies!", "screen12.RB();",
     "screen36aEn.changeContent();"
 )
@@ -1479,12 +1507,12 @@ let screen36aEn = new MainContent(
 )
 
 let screen37aEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
-    "I must take a picture immeadiately or nobody is going to believe me!", "screen12.RB();",
+    "I must take a picture immeadiately or nobody is&nbspgoing to believe me!", "screen12.RB();",
     "I'll ask them questions about the planet where they came from", "screen12.RA();",
-    "Peaceful, huh? I remember all the films about aliens, so I'll be careful", "screen12.RB();",
-    "Wow, how many eyes do they have? I should joing their comapny and have a closer look", "screen12.RA();",
+    "Peaceful, huh? I remember all the films about aliens, so&nbspI'll be careful", "screen12.RB();",
+    "Wow, how many eyes do they have? I should joing their company and have a closer look", "screen12.RA();",
     "screen38aEn.changeContent();"
 )
 
@@ -1492,19 +1520,19 @@ let screen38aEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "",
-    "Oh yes! I really want to post the photos from the other planet!", "",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "",
     "Sounds suspicious. We've only just met!", "",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "",
     "screen38aEn.calculateDirection3aEn();"
 )
 
 let screen35bEn = new MainContent(
-    "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What are you going to do?", 
+    "A big screen lights up in the middle of the room with some text on it, but all the text is encrypted. What are you going to do?", 
     "/img/5q.jpg",
     "I'll just decipher it!", "screen12.RA();",
     "Well... I'll try to find some patterns. This sign here looks like a funny face", "screen12.RA();",
     "It's just a program, it can be hacked", "screen12.RB();",
-    "You can find everything on the Internet! Well, at least something similar...", "screen12.RB();",
+    "You can find everything on the Internet! Well,&nbspat&nbspleast something similar...", "screen12.RB();",
     "screen36bEn.changeContent();"
 )
 
@@ -1512,18 +1540,18 @@ let screen36bEn = new MainContent(
     "The deciphered message is this: «Go to the farthest corridor and meet some amazing creatures». What do you think?", 
     "/img/6q.jpg",
     "I'll just go and see, it isn't probably going to be dangerous", "screen12.RA();",
-    "I need to read the website of this school more carefully. They must have something about these creatures there", "screen12.RB();",
+    "I need to check the website of this school. They must have something about these creatures there", "screen12.RB();",
     "I'll hack the survelliance cameras and see what they have there", "screen12.RB();",
-    "Usually the scary stuff is kept in far corridors. I'd better find something for protection", "screen12.RA();",
+    "Usually the scary stuff is kept in far corridors. I'd&nbspbetter find something for protection", "screen12.RA();",
     "screen37bEn.changeContent();"
 )
 
 let screen37bEn = new MainContent(
-    "In the farthest corridore you meet... aliens! They seem quite peaceful, so how are you going to behave?", 
+    "In the farthest corridore you meet... aliens! They seem quite peaceful, so&nbsphow are you going to behave?", 
     "/img/7q.jpg",
     "Well, first I'll say 'Hi' and just see what happens", "screen12.RA();",
     "I'll try to establish contact, obviously. Hey, guys, are you on Facebook?", "screen12.RB();",
-    "I should try to find out who they are and what their business is without getting them suspicious", "screen12.RA();",
+    "I should try to find out who they are and what their business is, without getting them suspicious", "screen12.RA();",
     "I'll check if I can be an inter-plantery exchange student on the website!", "screen12.RB();",
     "screen38bEn.changeContent();"
 )
@@ -1532,9 +1560,9 @@ let screen38bEn = new MainContent(
     "After you've talked a little, your new friends invite you to visit their planet. What are you going to answer?", 
     "/img/8q.jpg",
     "I'll try get all possible information about their planet before giving an answer", "",
-    "Oh yes! I really want to post the photos from the other planet!", "",
+    "Oh yes! I really want to post the photos from the&nbspother planet!", "",
     "Sounds suspicious. We've only just met!", "",
-    "OK, but I need to pack a suitcase and grab a couple of my friends first", "",
+    "OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first", "",
     "screen38bEn.calculateDirection3bEn();"
 )
 
@@ -1545,17 +1573,17 @@ let screen42En = new MainContent(
     "/img/2q.jpg",
     "Find the stairs – such a great chance for some exercise!", "screen12.B();",
     "Call a personal dragon, obviously", "screen12.A();",
-    "The School of the Future must have a teleport, so he will find it", "screen12.A();",
+    "The School of the Future must have a teleport, so&nbsphe will find it", "screen12.A();",
     "Connect to Wi-Fi first, and work from there", "screen12.B();",
     "screen43En.changeContent(); document.querySelector('.loading-label').innerHTML = 'Lights go dim and a voice says that your child would pass the test and be admitted to the school of the future!'; document.querySelector('.loading-text').innerHTML = 'We found out who he could become in our school of the future! Would you like to know your result?';"
 )
 
 let screen43En = new MainContent(
-    "Your child gets upstairs and finds himself in a large spacious room, but there's nobody there except for a small black box right in the middle of the room. What will your child do with it?", 
+    "Your child gets upstairs and finds himself in a large room, but there's nobody there except for a small black box right in the middle of the room. What will your child do?", 
     "/img/3q.jpg",
     "He'll search the Internet to find out what it is", "screen12.B();",
     "A black box? Get it decorated it with markers and glitter, of course", "screen12.A();",
-    "He'll take a photo and send it to his friends so they could help", "screen12.A();",
+    "He'll take a photo and send it to his friends so&nbspthey could help", "screen12.A();",
     "He'll kick it and see what happens!", "screen12.B();",
     "screen44En.changeContent();"
 )
@@ -1563,10 +1591,10 @@ let screen43En = new MainContent(
 let screen44En = new MainContent(
     "Suddenly there's a voice from the box: «So, young student, what test are you ready to take to get into our school?» What will your child answer?", 
     "/img/4q.jpg",
-    `"Oh, so I can choose? I'd like the one that's most fun and easy!"`, "screen12.B();",
-    `"Any, just give me a moment so I could turn on my camera to record my vlog"`, "screen12.A();",
-    `"A test at school probably isn't going to be tough, so I'm OK with any"`, "screen12.B();",
-    '"Any will do! Except for maths..."', "screen12.A();",
+    `«Oh, so&nbspI can choose? I'd like the one that's most fun and easy!»`, "screen12.B();",
+    `«Any, just give me a moment so&nbspI could turn on my camera to record my vlog»`, "screen12.A();",
+    `«A test at school probably isn't going to be tough, so&nbspI'm OK with any»`, "screen12.B();",
+    '«Any will do! Except for maths...»', "screen12.A();",
     "screen44En.calculateDirection4En();" //!
 )
 
@@ -1574,7 +1602,7 @@ let screen45aEn = new MainContent(
     "A big screen lights up in the middle of the room with a map and some text on it, but all the text is encrypted. What will your child do?", 
     "/img/5q.jpg",
     "Well... He'll try to find some patterns. This sign here looks like a funny face, for example", "screen12.RA();",
-    "He'll take a photo and send it to all his friends so that they can help", "screen12.RB();",
+    "He'll take a photo and send it to all his friends so&nbspthat they can help", "screen12.RB();",
     "Something similar must have been in one of the million computer games he's played...", "screen12.RA();",
     "He'll be delighted, he loves ciphers! Just like in the treasure hunt movies!", "screen12.RB();",
     "screen46aEn.changeContent();"
@@ -1591,11 +1619,11 @@ let screen46aEn = new MainContent(
 )
 
 let screen47aEn = new MainContent(
-    "In the farthest corridore your child meets... aliens! They seem quite peaceful, so how is he going to behave?", 
+    "In the farthest corridore your child meets... aliens! They seem quite peaceful, so&nbsphow is he going to behave?", 
     "/img/7q.jpg",
     "He'll take a picture immeadiately to have proof for everybody", "screen12.RB();",
     "He'll ask them questions about the planet where they came from", "screen12.RA();",
-    "Peaceful, huh? He's watched all the films about aliens, so he'll be careful", "screen12.RB();",
+    "Peaceful, huh? He's watched all the films about aliens, so&nbsphe'll be careful", "screen12.RB();",
     "They don't look like people at all! He'll try to join their comapny and have a closer look", "screen12.RA();",
     "screen48aEn.changeContent();"
 )
@@ -1603,10 +1631,10 @@ let screen47aEn = new MainContent(
 let screen48aEn = new MainContent(
     "After a little talk, his new friends invited him to visit their planet. What is he going to answer?", 
     "/img/8q.jpg",
-    `"I'll try get all possible information about their planet before giving an answer"`, "",
-    '"Oh yes! I really want to post the photos from the other planet!"', "",
-    `"Sounds suspicious. We've only just met!"`, "",
-    '"OK, but I need to pack a suitcase and grab a couple of my friends first"', "",
+    `«I'll try get all possible information about their planet before giving an answer»`, "",
+    '«Oh yes! I really want to post the photos from the&nbspother planet!»', "",
+    `«Sounds suspicious. We've only just met!»`, "",
+    '«OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first»', "",
     "screen48aEn.calculateDirection4aEn();"
 )
 
@@ -1616,7 +1644,7 @@ let screen45bEn = new MainContent(
     "He'll just decipher it.", "screen12.RA();",
     "Well... He'll try to find some patterns. This sign here looks like a funny face, for example", "screen12.RB();",
     "It's just a program, it can be hacked", "screen12.RA();",
-    "You can find everything on the Internet! Well, at least something similar...", "screen12.RC();",
+    "You can find everything on the Internet! Well,&nbspat&nbspleast something similar...", "screen12.RC();",
     "screen46bEn.changeContent();"
 )
 
@@ -1631,7 +1659,7 @@ let screen46bEn = new MainContent(
 )
 
 let screen47bEn = new MainContent(
-    "In the farthest corridore your child meets... aliens! They seem quite peaceful, so how is he going to behave?", 
+    "In the farthest corridore your child meets... aliens! They seem quite peaceful, so&nbsphow is he going to behave?", 
     "/img/7q.jpg",
     "Well, first he'll say «Hi» and then just see what happens", "screen12.RB();",
     "He'll try to establish contact, obviously, and ask them if they are on Facebook", "screen12.RC();",
@@ -1644,9 +1672,9 @@ let screen48bZEn = new MainContent(
     "After a little talk, his new friends invited him to visit their planet. What is he going to answer?", 
     "/img/8q.jpg",
     `«I'll try get all possible information about their planet before giving an answer»`, "",
-    `«Oh yes! I really want to post the photos from the other planet!»`, "",
-    `"Sounds suspicious. We've only just met!"`, "",
-    `"OK, but I need to pack a suitcase and grab a couple of my friends first"`, "",
+    `«Oh yes! I really want to post the photos from the&nbspother planet!»`, "",
+    `«Sounds suspicious. We've only just met!»`, "",
+    `«OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first»`, "",
     "screen28bEn.calculateDirection4bEn();"
 )
 
@@ -1654,8 +1682,8 @@ let screen48bEn = new MainContent(
     "After a little talk, his new friends invited him to visit their planet. What is he going to answer?", 
     "/img/8q.jpg",
     `«I'll try get all possible information about their planet before giving an answer»`, "screen12.RA();",
-    `«Oh yes! I really want to post the photos from the other planet!»`, "screen12.RC();",
+    `«Oh yes! I really want to post the photos from the&nbspother planet!»`, "screen12.RC();",
     `«Sounds suspicious. We've only just met!»`, "screen12.RB();",
-    `«OK, but I need to pack a suitcase and grab a couple of my friends first»`, "screen12.RB();",
+    `«OK, but I need to pack a suitcase and grab a&nbspcouple of my friends first»`, "screen12.RB();",
     "screen48bEn.calculateDirection4bEn();"
 )
