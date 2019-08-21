@@ -1157,7 +1157,7 @@ let screen47a = new MainContent(
     "Они же не похожи на людей! Он постарается влиться в коллектив и поближе их рассмотреть", "screen12.RA();",
     "screen48a.changeContent();"
 )
-result1.showResult();
+
 let screen48a = new MainContent(
     "После недолгого общения новые знакомые приглашают Вашего ребёнка в гости на свою планету. Что&nbspон&nbspответит?", 
     "/img/8q.jpg",
