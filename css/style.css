@@ -465,6 +465,7 @@ main {
     margin: 0 auto;
   }
   #future-role {
+    margin-top: 4vh;
     width: 90%;
     text-align: center;
     font-family: Geometria Medium;
@@ -476,6 +477,7 @@ main {
     font-size: 2.2vh;
   }
   #ending-btn {
+    margin-bottom: 3vh;
     color: white;
     background-image: url("/img/e-btn.png");
     background-size: contain;
