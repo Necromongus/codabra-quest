@@ -6,32 +6,32 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
-document.getElementById("fb-share").addEventListener('mouseover', FbShareIn);
-document.getElementById("fb-share").addEventListener('mouseout', FbShareOut);
-function FbShareIn(){
-    document.getElementById("fb-share").src = "/img/fb-h.png";
-}
-function FbShareOut(){
-    document.getElementById("fb-share").src = "/img/facebook.png";
-}
+// document.getElementById("fb-share").addEventListener('mouseover', FbShareIn);
+// document.getElementById("fb-share").addEventListener('mouseout', FbShareOut);
+// function FbShareIn(){
+//     document.getElementById("fb-share").src = "/img/fb-h.png";
+// }
+// function FbShareOut(){
+//     document.getElementById("fb-share").src = "/img/facebook.png";
+// }
 
-document.getElementById("tw-share").addEventListener('mouseover', TwShareIn);
-document.getElementById("tw-share").addEventListener('mouseout', TwShareOut);
-function TwShareIn(){
-    document.getElementById("tw-share").src = "/img/tw-h.png";
-}
-function TwShareOut(){
-    document.getElementById("tw-share").src = "/img/twitter.png";
-}
+// document.getElementById("tw-share").addEventListener('mouseover', TwShareIn);
+// document.getElementById("tw-share").addEventListener('mouseout', TwShareOut);
+// function TwShareIn(){
+//     document.getElementById("tw-share").src = "/img/tw-h.png";
+// }
+// function TwShareOut(){
+//     document.getElementById("tw-share").src = "/img/twitter.png";
+// }
 
-document.getElementById("vk-share").addEventListener('mouseover', VkShareIn);
-document.getElementById("vk-share").addEventListener('mouseout', VkShareOut);
-function VkShareIn(){
-    document.getElementById("vk-share").src = "/img/vk-h.png";
-}
-function VkShareOut(){
-    document.getElementById("vk-share").src = "/img/vk.png";
-}
+// document.getElementById("vk-share").addEventListener('mouseover', VkShareIn);
+// document.getElementById("vk-share").addEventListener('mouseout', VkShareOut);
+// function VkShareIn(){
+//     document.getElementById("vk-share").src = "/img/vk-h.png";
+// }
+// function VkShareOut(){
+//     document.getElementById("vk-share").src = "/img/vk.png";
+// }
 
 async function StartQuest() {
     for (const startElement of startElements){
